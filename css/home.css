@@ -105,6 +105,7 @@ a:focus {
   margin: 2.4rem 0 0.85rem;
   padding-top: 0.4rem;
   border-top: 1px solid var(--line);
+  clear: both;
 }
 
 .prose h3 {
@@ -205,11 +206,83 @@ a:focus {
 }
 
 .prose img {
-  max-width: 11rem;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
   display: block;
-  margin: 0 0 1.25rem;
+  margin: 0.75rem 0 1.15rem;
+}
+
+.achievement {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 10.5rem) minmax(0, 1fr);
+  gap: 0.9rem 1.2rem;
+  align-items: center;
+  margin: 1.35rem 0;
+}
+
+.achievement p {
+  margin: 0;
+}
+
+.achievement img {
+  width: 100%;
+  margin: 0;
+}
+
+.achievement-img--on-light {
+  background: #fff;
+  padding: 0.7rem 0.75rem;
+}
+
+.achievement--cover {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.achievement--cover img {
+  width: 75%;
+  max-width: 27rem;
+}
+
+.contact-photo {
+  width: 100%;
+  max-width: 100%;
+  margin: 0.65rem 0 1.1rem;
+}
+
+.figure-wide {
+  width: 100%;
+  margin: 0.85rem 0 1.4rem;
+  border: 1px solid var(--line);
+}
+
+.profile-photo {
+  float: right;
+  width: 10.75rem;
+  max-width: 42%;
+  margin: 0 0 1rem 1.2rem;
+}
+
+@media (max-width: 640px) {
+  .achievement {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement img {
+    max-width: 10.5rem;
+  }
+
+  .achievement--cover img {
+    width: 75%;
+    max-width: 27rem;
+  }
+
+  .profile-photo {
+    float: none;
+    max-width: 10.75rem;
+    margin: 0 0 1rem;
+  }
 }
 
 .linkedin-feed ul {

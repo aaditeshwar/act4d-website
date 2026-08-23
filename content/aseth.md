@@ -1,5 +1,7 @@
 # Aaditeshwar Seth
 
+<img class="profile-photo" src="images/aadi-crop.jpg" alt="Aaditeshwar Seth">
+
 *Professor, Department of Computer Science and Engineering, and ANSK School of Information Technology, IIT Delhi*
 
 I run the [ACT4D (Appropriate Computing Technologies for Development)](index.html) research group. 
