@@ -2,3 +2,25 @@
 __pycache__/
 .DS_Store
 Thumbs.db
+
+# Editor / OS leftovers
+*~
+*.bak
+*.save
+*.save.*
+._*
+
+# GEM: unused copies, editor leftovers, and non-web artifacts
+gem-website/dummy.html
+gem-website/Entities/POLITICALECONOMY.htm y
+gem-website/Entities/SOCIO-ECODEV-1.htm
+gem-website/Entities/SOCIO-ECODEV-2.htm
+gem-website/Entities/socio-econ-hypo-1/
+gem-website/Entities/socio-econ-hypo/main-district-page-2.php
+gem-website/Entities/create-mysql-table.sql
+gem-website/Entities/filterArticles.py
+gem-website/Entities/Models/
+gem-website/Entities/MRV/
+gem-website/GeoJSON_Files-1/
+gem-website/Entities/Files/*.xlsx
+gem-website/**/WhatsApp Image*

@@ -1,0 +1,7 @@
+<Files SOCIO-ECODEV.htm>
+	AddType application/x-httpd-php .htm
+</Files>
+
+<Files /var/www/html/Entities/SOCIO-ECODEV-1.htm>
+	AddType application/x-httpd-php .htm
+</Files>
