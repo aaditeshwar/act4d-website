@@ -1,0 +1,1357 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Aptos;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 3 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;}
+h2
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;}
+h3
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;}
+h4
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-style-next:Normal;
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 5 Char";
+	mso-style-next:Normal;
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:2.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;}
+h6
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 6 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 7 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 8 Char";
+	mso-style-next:Normal;
+	margin:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 9 Char";
+	mso-style-next:Normal;
+	margin:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0cm;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0cm;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-priority:11;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Subtitle Char";
+	mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;
+	letter-spacing:.75pt;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#467886;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#96607D;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-priority:29;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Quote Char";
+	mso-style-next:Normal;
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:#404040;
+	mso-themecolor:text1;
+	mso-themetint:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-priority:30;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Intense Quote Char";
+	mso-style-next:Normal;
+	margin-top:18.0pt;
+	margin-right:43.2pt;
+	margin-bottom:18.0pt;
+	margin-left:43.2pt;
+	text-align:center;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-top-alt:solid #0F4761 .5pt;
+	mso-border-top-themecolor:accent1;
+	mso-border-top-themeshade:191;
+	mso-border-bottom-alt:solid #0F4761 .5pt;
+	mso-border-bottom-themecolor:accent1;
+	mso-border-bottom-themeshade:191;
+	padding:0cm;
+	mso-padding-alt:10.0pt 0cm 10.0pt 0cm;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{mso-style-priority:21;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-style:italic;}
+span.MsoIntenseReference
+	{mso-style-priority:32;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	font-variant:small-caps;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-style:italic;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 5";
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 6";
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 7";
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 8";
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;
+	font-style:italic;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 9";
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Title;
+	mso-ansi-font-size:28.0pt;
+	mso-bidi-font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-priority:11;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Subtitle;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;
+	letter-spacing:.75pt;}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	mso-style-priority:29;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Quote;
+	color:#404040;
+	mso-themecolor:text1;
+	mso-themetint:191;
+	font-style:italic;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	mso-style-priority:30;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Intense Quote";
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-style:italic;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:11.0pt;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body lang=EN-US link="#467886" vlink="#96607D" style='tab-interval:36.0pt;
+word-wrap:break-word'>
+<header class="site-header" data-site-nav></header>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b>Research-to-impact process<o:p></o:p></b></p>
+
+<p class=MsoNormal>Outlined below are several new ideas and ongoing research projects in <a href="https://act4d.iitd.ac.in/">our lab</a>. This research feeds into a careful cadence for the development
+and deployment of products built around the <a href="https://core-stack.org/"><span class=SpellE>CoRE</span>
+stack</a>. See this <a
+href="https://drive.google.com/file/d/1BX_lLef_OiGkixc3xnkseG8UO0oHnIZ-/view?usp=drive_link">manual</a>
+as an example of research outputs for many datasets and indicators related to
+water security, and how the <a href="https://explorer.core-stack.org/">outputs</a>
+are now being used by field partners. Much
+opportunity of using data and technology for climate action and environmental
+sustainability requires careful translational work from research to deployment,
+and therefore this process works well only through a collaboration between academia, engineers, and implementation
+organizations. With each day, we are perfecting this process so that it can become a model for translating research to impact at scale. </p>
+
+<p class=MsoNormal>Skillsets: Most of these projects involve the use of machine learning
+on geospatial data and statistical analysis, but also span human-computer interaction
+and systems building for scaling computation. Interested students should <a href="aseth.html">write to me</a>. </p>
+
+<p class=MsoNormal>Last updated  Oct 2024. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>Forests and ecology<o:p></o:p></b></p>
+<p class=MsoNormal>These projects are being integrated into a broader product vision of guiding forest restoration projects to provide decision support and evidence for communities to manage their forests in a sustainable manner. We want to be able to help spot specific locations requiring restoration, then provide guidance in terms of which tree species to plant in these areas, and build a process to do this in consultation with communities to leverage local ecological knowledge. </p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Tree Species Biodiversity Estimation and Traits Classification - Shiva, Dhruvi<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Biodiverse ecosystems enhance
+resilience, allowing forests to adapt to changing conditions, such as shifting
+temperatures and increased pests. A mix of species can improve carbon
+sequestration, and support healthy soil and water systems, which are vital for
+ecosystem stability. In this project we aim to monitor tree species biodiversity
+using satellite imagery. We use PCA and unsupervised clustering methods to
+determine high and low biodiverse hotspots in different eco-regions. We are also
+working on identifying traits such as leaf-shed duration and leaf size, to build
+a finer assessment of tree species occurrence. </p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Co-creation partnerships: ATREE, NCF. </p>
+
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Species Distribution Modelling - Jyotiraditya, Shourya, Dhruvi<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Utilizing Species Distribution
+Modeling (SDM), the project evaluates various environmental and climatic
+factors that influence the distribution and habitat preferences of different
+tree species. The aim of this study is to support forest restoration planning
+and conservation efforts by recommending specific species in degraded or less
+biodiverse sites to improve conservation strategies across India's diverse eco-regions.
+</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Co-creation partnerships: ATREE, NCF. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Forecasting Forest Fires in India Using Climate and Social
+Variables - Raman, Anaad<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>In India, large forest fires are
+usually natural, while small forest fires are typically caused by human
+activity. Both types of fires can be detrimental to forest resources,
+biodiversity, and communities that live alongside the forests. Although large
+forest fires are easier to detect through remote sensing data, small forest
+fires often go unnoticed. Furthermore, while efforts are made to detect forest
+fires, there is currently no model capable of forecasting both small and large
+forest fires. A reliable forecast could provide communities and forest
+authorities with valuable time to reach the fire site, control the blaze, and
+evacuate people if necessary. We are building models to detect and forecast
+both types of fires. Climate variables, such as latent heat flux and long-wave
+radiation flux, indicate the conditions necessary for a fire to occur.
+Meanwhile, human factors, including the extent of settlements, development, and
+the proximity of indigenous populations to the forest, reflect the likelihood
+of human-caused fires. Our goal is to model these variables to predict the
+probability of forest fires in specific regions.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Multi-resolution mapping of trees - TBD<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>We want to develop a methodology to identify a forest patch of a few dozen acres and profile it repeatedly through drone monitoring on a fortnightly basis. When coupled with geo-tagging of trees done by field workers, this will provide us with a detailed imagery of changes in tree characteristics such as leaf shedding, flowering, fruiting, etc. We will use computer vision techniques to automatically annotate the forest patch. And then use these annotations as groundtruth data to train models using lower-resolution satellite data to estimate the tree characteristics. This way, through drone-assisted groundtruth data collection in a small area, we will be able to characterize changes in large forest areas. We want to start doing this in the IIT Delhi campus where we have already done a detailed geo-tagging of trees.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=SpellE><b>Agro</b></span><b>-ecology<o:p></o:p></b></p>
+<p class=MsoNormal>These projects are meant to feed into a broader product vision to match locations appropriately with agroforestry and cropping systems to build climate resilience, improved livelihood, and food security, for local communities. </p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Plantation Suitability Scoring Model - Anoushka, Shiva, Dhruvi<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Tree plantations can be economically
+beneficial for farmers but could be undertaken in areas that cannot meet the
+demand of water or other resources for the specific tree species. It is
+therefore important to understand the suitability of a region for the
+plantation of a particular tree species. This project aims to assess the
+suitability of putting up a plantation at a given site by assigning a score
+that aggregates multiple ecological and social parameters related to climate,
+soil, topography etc. Remote sensing information of variables like mean
+temperature, soil texture and NDVI are aggregated using weights and suitability
+classes defined by the study and by domain experts.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Co-creation partnerships: Say Trees, FES. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Cropping Diversity Assessment - Prakkhyaat<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>The importance of diversity in cropping
+patterns is well recognized, to allow for soil regeneration, better nutrition,
+and higher resilience from climatic factors or pest attacks. In this study, we
+used district-wise and season-wise crop production statistics, supplemented with
+Sentinel-2 spectral data, to estimate cropping diversity in an area. We use PCA
+and unsupervised clustering methods to process and analyze the <span
+class=GramE>data, and</span> calculate biodiversity indices that can be traced
+over time. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>Hydrology<o:p></o:p></b></p>
+<p class=MsoNormal>These projects aim to improve the underlying datasets and methods built into the <a href="https://www.cse.iitd.ernet.in/~aseth/commons-connect-ictd2024.pdf">Know Your Landscape and Commons Connect</a> tools for water security planning by communities. </p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Evapotranspiration Downscaling - Vidushi, Utkarsh, Shivani<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>In countries like India which
+have historically been reliant on rainfed agriculture, the increasing need of
+water for irrigation to support greater cropping intensity and shifts towards
+horticulture, has largely been supported through groundwater-based irrigation.
+Cheap electricity has enabled a rapid increase in borewells almost across the
+country, which to some extent has enabled more equitable access to water than
+other irrigation approaches like canals but has also led to groundwater stress
+in many regions. One way to indirectly estimate groundwater abstraction is to
+estimate evapotranspiration from cropping areas as a proxy for crop water
+consumption. Remote sensing has been used to estimate <span class=GramE>evapotranspiration</span>
+but existing open data products largely have a low spatial resolution which is
+not adequate to support local decision making for water use. In our <a
+href="https://www.cse.iitd.ernet.in/~aseth/et-downscaling.pdf">initial
+experiments</a>, we used machine learning methods to downscale MODIS data
+(originally at 500m) outputs of evapotranspiration at 30m using meteorological
+variables from GLDAS, and land surface characteristics from Landsat as input
+features. We observed that our method was not able to accurately match in situ
+data but was able to successfully provide relative differences in
+evapotranspiration. As a further effort to build an accurate and scalable
+Indian ET product, we plan to conduct the next set of experiments using surface
+energy balance methods, land cover specific models, and crop specific models to
+estimate ET at finer scales.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Co-creation partnerships: WELL Labs. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Impact of New Waterbodies on Downstream Waterbodies - Ankit, Shivani<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Our CSO partner, FES, has built a
+method to assess the groundwater recharge potential of a site to determine its
+suitability for water conservation structures like <span class=SpellE>checkdams</span>,
+trenches, and percolation tanks. During field testing of several of these
+outputs, experienced CSO field staff and volunteers indicated that in addition
+to assessing this recharge potential, it will be useful to also assess the runoff
+accumulation capacity for the proposed site. We are building geospatial algorithms
+that simulate rainfall and runoff on digital elevation maps to determine potential
+runoff accumulation in drought and non-drought years. Further, once new water
+bodies are constructed, they may reduce runoff accumulation in downstream water
+bodies. We have built a method to obtain a connectivity graph of water bodies,
+and then study how the new water bodies may alter the runoff flow.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Co-creation partnerships: FES. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Modelling Changes in Groundwater Levels in Shallow and Deep
+Aquifers - Badrinath, Shivani<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Changes in groundwater levels can
+be correlated with changes in cropping patterns, cropping intensity,
+construction of groundwater recharge structures, and rainfall patterns, to
+understand the interplay between hydrological and social aspects impacting
+groundwater use. The Central Ground Water Board (CGWB) conducts seasonal
+measurements across the country of about 25,000 observation wells. The data is
+known to have several limitations though. The spatial resolution is too coarse
+to understand groundwater patterns at finer scales such as villages and
+panchayats which is the level at which decision making is done. The observation
+wells mostly measure water table levels in the unconfined shallow aquifer
+zones. Most regions in India have mixed aquifer systems and CGWB data often
+does not tally with ground reports where borewells are used to access
+groundwater from deeper or confined aquifer zones. The Atal <span class=SpellE>Bhujal</span>
+Yojana (ABY), a Government of India scheme, focused on improving groundwater
+levels in India, monitors groundwater levels in deeper aquifers using borewell
+data. We have implemented a water-balance method to estimate changes in
+groundwater levels at a micro-watersheds scale on a fortnightly basis. We use
+the precipitation data over a micro-watershed, subtract from it the runoff, and
+subtract further the evapotranspiration from the micro-watershed, leaving the
+balance as change in groundwater. The methodology currently does not segregate
+between groundwater usage in the shallow and deeper aquifer zones and does not
+take lateral flow into account. In ongoing research, we are using CGWB well
+data and ABY borewell data to build a machine learning based calibration model
+that controls for aquifer properties to get more accurate measures of
+groundwater changes in shallow and deep aquifers.<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Identifying groundwater recharge and discharge zones - TBD<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Depth to water in wells when measured from a sufficiently high density of wells in an area can reveal the underlying aquifer structure and contours of groundwater availability. This is especially useful to identify groundwater recharge and discharge areas, and guide the planning of water structures.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Co-creation partnerships: WASSAN. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Flood hazard mapping and forecasting - Vibhanshu<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Floods affect millions of people globally each year, causing significant loss of life, displacement, and economic damage, with regions like the Kosi River Basin being particularly vulnerable. Accurately identifying areas that face flood hazards and forecasting future flooding events are both useful. We are using methods to detect transient surface water presence using Sentinel data to first build a hazard map of areas prone to flooding. Using this hazard map, we are then building machine learning models to predict new areas that could see floods in the coming fornight based on weather forecasting data. We are also trying to learn about streamflow data availability in different river basins to factor that as well for early-warning systems.<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>Impact assessment and social-ecological interactions<o:p></o:p></b></p>
+<p class=MsoNormal>Good modeling can lead to valuable new insights for planning. These projects are meant to integrate into the <a href="https://www.cse.iitd.ernet.in/~aseth/commons-connect-ictd2024.pdf">Know Your Landscape and Commons Connect</a> tools to conduct impact projections and compare different water security plans with one another. </p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Site Level Impact Assessment of Farm Ponds - Sanya, Anika, Ramneek<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>NREGA is a significant initiative
+aimed at promoting sustainable livelihoods by providing demand-driven
+employment, with a focus on natural resource management projects such as farm
+ponds. Farm ponds play a crucial role in water conservation, improving irrigation,
+and enhancing agricultural resilience in drought-prone regions. However,
+evaluating the impact of these projects has been challenging, as past studies
+have often relied on traditional survey methods and were limited to small
+regions, making it difficult to capture broader variability. This project utilizes
+Double Machine Learning (DML) on remote sensing data to improve the precision
+of impact assessments and better capture the Heterogeneous Treatment Effects
+(HTE) of farm ponds on crop yields. DML, combined with
+Difference-in-Differences (<span class=SpellE>DiD</span>), allows us to <span
+class=GramE>control for</span> confounding factors and generate more accurate,
+region-specific insights. Initial results indicate a significant increase in
+crop productivity at certain treated sites, with further analysis expected to
+uncover unobserved factors influencing these outcomes. Moving forward, this
+approach could optimize NREGA's strategies, enhance policy decision-making, and
+provide more reliable projections for future impacts, particularly in
+understanding how natural resource management interventions can be tailored to
+different environmental contexts.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Landscape Level Impact Assessment of NRM structures for
+Water Conservation - Aryansh, Ramneek<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Natural Resource Management (NRM)
+interventions such as farm ponds, check dams, trenches cum bunds, and so on,
+are believed to positively impact the crop yield and drought resilience in the
+surrounding cropping region either through supplemental irrigation or through
+direct improvement in soil moisture in the immediate <span class=SpellE>neighbourhood</span>
+of the intervention. Our <a
+href="https://www.cse.iitd.ernet.in/~aseth/farm-ponds.pdf">recent study</a> on
+assessing the site-level impact of farm ponds substantiates this hypothesis.
+However, at a landscape-level, NRM structures could have a negative impact on
+downstream regions as they capture the runoff which would otherwise have flown
+into and <span class=GramE>benefitted</span> the downstream regions, or improved
+water availability due to the NRM structures could prompt an increase in
+groundwater extraction and leave less water for other cropping areas. In this
+study, we aim to study the impact of NRM structures on the zone of influence of
+downstream water bodies and on cropping areas outside the zone of influence of
+water bodies by leveraging remote-sensing data products and employing the
+Difference-in-Differences and the Double ML methods. We are currently building
+models to estimate the zone of influence around water bodies and other NRM
+structures as a function of their size. Our preliminary tests confirm the
+hypothesis that the soil moisture around NRM structures decreases with
+increasing distance. The next step in the framework is to identify sites that
+are <span class=GramE>similar to</span> treated sites but did not receive the
+intervention (counterfactual sites), and then compare the outcomes (vegetation
+indices) in their zone of influence.<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Co-evolution of Economic Wealth and Environmental Sustainability
+in Indian Villages - Badrinath, Mrunal<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>The Government of India conducts
+nationwide surveys on socio-economic, health, and education indicators.
+However, these surveys are time-consuming, conducted at variable frequencies,
+and have significant delays in delivering results. Our project aims to address
+this by developing a Relative Wealth Index (RWI) using satellite data as an
+indicator to quantify the socio-economic status of villages. Additionally, we
+are working on identifying sustainability factors to assess how villages can develop
+economically while being environmentally sustainable as well. We are currently
+analyzing changes in RWI of villages against environmental factors such as forest
+cover, agricultural land-use, and groundwater stress, with population caste
+division and climate variable as additional co-variates. We classify villages
+into forest-fringe, rainfed, or irrigated (via canal or groundwater)
+categories, and assess RWI and sustainability changes over time. Eventually we also
+want to build indicators of ecological pressure to identify areas that are
+especially vulnerable to ecological stress. <o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>System Dynamics and Modeling of <span class=SpellE>Microwatersheds - Anamitra, Shivani, Ramneek</span><o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>The sustainable management of <span
+class=SpellE>microwatersheds</span> is critical for addressing long-term water
+security, particularly in regions reliant on groundwater for agriculture.
+However, understanding the intricate dynamics of these systems, which summarize
+climatic, hydrological, physiological, and socio-economic factors at the <span
+class=SpellE>microwatershed</span> level, presents a complex challenge. In this
+study, we leverage remote sensing data to model and analyze the dynamics of <span
+class=SpellE>microwatersheds</span>, using which &quot;what if&quot; scenarios can
+be constructed to evaluate the impacts of various interventions like the
+creation of water bodies or the building of NREGA structures. These
+interventions aim to reduce groundwater stress and facilitate a transition
+toward rainwater-fed irrigation systems. Our simulations incorporate various
+climate-induced scenarios to assess the influence of prospective interventions on
+water availability and system sustainability. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>Simplifying the practice of socio-ecological sustainability
+on the ground<o:p></o:p></b></p>
+<p class=MsoNormal>We believe that technology will positively impact communities only when they are able to understand and operate it themselves. Building upon our experience of having done this successfully at Gram Vaani with communities being able to use voice-based participatory media for social accountability, knowledge sharing, and community awareness, we now envision a similar model wherein community stewards from within local communities can use the data and technology outputs of the CoRE stack for better planning and ecological management of their landscapes. To do this, we need training and knowledge building tools for community stewards. </p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Leveraging LLMs for Landscape Assessment and Climate
+Action Recommendations - Priyadarshini, Shivani<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>The planning for NRM assets needs
+to be locally contextual at fine scales of micro-watersheds, characterized by variables
+including rainfall patterns, groundwater stress, soil types, terrain, etc., and
+described in easy ways for field cadre and community stewards to follow. Large
+Language Models (LLMs) can potentially play a role in automatically generating
+such descriptions using their comprehensive knowledge base and ability to
+process time-series data. We intend to generate LLM assisted landscape level descriptions
+by using data <span class=GramE>of</span> various socio-ecological variables
+and a series of prompts. Given the landscape characterization, we then intend to
+explore whether LLMs are also able to recommend landscape specific NRM assets
+by using their own knowledge base along with data on MGNREGA assets that have
+been approved in different areas, region-specific CSO reports on water security,
+and recently prepared DPRs consisting of proposed water assets. We have started
+with investigating the ability of using LLM to interpret univariate and
+multivariate time-series of various socio-ecological variables.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Co-creation partnerships: Viksit Labs, Saarland University. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>Land-use and land-cover classification<o:p></o:p></b></p>
+<p class=MsoNormal>"<i>You can only manage what you can measure</i>" -- high fidelity monitoring of land-use changes is critical to understand the current state of affairs and to use the data to uncover causal pathways that would have led to the current situation. These projects improve and add new elements to the extensive monitoring already available on the <a href="https://explorer.core-stack.org/">CoRE stack</a>. </p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Crop Classification using Remote Sensing Data - Pratham<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Accurate crop identification is
+essential to monitor agricultural practices. We are developing a model that
+predicts crop types by leveraging vegetation indices obtained <span
+class=GramE>form</span> satellite imagery. The methodology involves training
+machine learning models using historical crop data, remote sensing inputs, and feature
+engineering to capture relevant patterns. Initial results demonstrate promising
+accuracy in being able to distinguish between major crops in an area, such as to
+distinguish maize, paddy, and other cereals grown commonly during the Kharif
+season in Karnataka. This research paves the way for more efficient crop
+monitoring systems that can help determine sustainable agricultural management.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Co-creation partnerships: WELL Labs. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Identification of Ponds, Wells, and Plantations from
+Google Maps - Aatif<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>The Mahatma Gandhi National Rural
+Employment Guarantee Act (MGNREGA) has led to the creation of numerous assets
+across India, including ponds, wells, and plantations. However, there is a lack
+of comprehensive information regarding these assets' precise locations and
+conditions. Our study presents an approach to automatically detect, delineate,
+and geographically locate MGNREGA assets using satellite maps. We download
+high-resolution image tiles from mapping sources at various zoom levels and apply
+object detection and image segmentation models to identify these assets. We
+then plan to use this mapping to assess (a) Equity in access to these assets within
+and across villages among different social groups; (b) Impact of these assets
+on agricultural productivity; and (c) potential future benefits of new assets.
+By providing a scalable solution for identifying MGNREGA assets, our research
+offers valuable insights for rural development policymakers and researchers.
+The developed methodology complements efforts to ensure quality planning and long-term
+monitoring of assets created over the years. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Entropy-Based Differentiation of Agricultural Land from Scrubland
+Using High-Resolution Geo-Spatial Data - Raman<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>In India, single-cropped agricultural
+land and scrubland (also referred to as shrublands, wastelands, etc.) often
+exhibit similar spectral signatures, making it challenging to distinguish
+between them using traditional methods applied on remote sensing data. However,
+the recent availability of high-resolution data and advancements in computer
+vision applied to geo-spatial data have shown promising results in delineating
+field boundaries. Our investigation reveals that when these models are applied
+to both agricultural land and scrubland, they provide satisfactory delineation
+of fields while also segmenting scrubland into approximate blobs. To further
+differentiate these blobs from fields, we have developed an entropy-based
+method. This method operates on the assumption that agricultural fields will
+exhibit less variation in texture or display structured variations due to human
+activity, whereas scrubland, being naturally formed, exhibits more random and
+unstructured texture. This insight is central to our approach, which we aim to
+model and refine to improve our land use and land cover (LULC) classification.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Co-creation partnerships: WELL Labs. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Identifying and monitoring Orans - TBD<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Orans are community-managed large tracts of land in arid areas in Rajasthan, where a delicate balance of water use for cropping, grazing of trees and grasses for livestock, and socio-economic development to meet the aspirations of the local communities, needs to be maintained. KRAPAVIS has surveyed over 100 Orans and identified key stress markers in each of them. But there are over 5,000 Orans in Rajasthan that need to be mapped and understood to be able to guide further development.<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Co-creation partnerships: KRAPAVIS. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b>Scaling computation<o:p></o:p></b></p>
+<p class=MsoNormal>All of the above work requires significant computation on large datasets - satellite imagery, remote sensing multispectral data, machine learning, groundtruth validation, error correction, etc. Managing long data flow chains and being able to run the algorithms at scale is crucial to make this vision a reality. </p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><i>Optimizing Satellite Image Processing Workloads - Vatsal, Rahul<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>Planetary-scale computation on
+large datasets, such as those covering India, presents significant challenges
+in terms of efficiency, particularly for long pixel dependency tasks that
+current platforms like Google Earth Engine do not handle efficiently. The
+problem is exacerbated by limited GPU memory and the need for distributed
+processing to manage the substantial memory requirements of some tasks. To
+address this, we are developing a framework utilizing GPUs and efficient
+kernels, along with GPU-based Python libraries like <span class=SpellE>rasterio</span>,
+<span class=SpellE>cupy</span>, and <span class=SpellE>cucim</span>, to perform
+hydrological and environmental analyses more effectively. Initial benchmarks
+for our runoff script have shown promising results, with accuracy and
+processing times comparable to Google Earth Engine, demonstrating the potential
+of our approach. Future work will focus on implementing long pixel dependency
+pipelines for flow accumulation, developing a distributed setup to overcome
+memory constraints, and utilizing Popper for efficient workflow execution. This
+approach has the potential to transform large-scale environmental and
+hydrological analyses by significantly enhancing performance and scalability. <o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<footer class="site-footer">
+  <p>ACT4D: Appropriate Computing Technologies for Development</p>
+</footer>
+<script src="js/site.js"></script>
+<script src="js/page.js"></script>
+</body>
+
+</html>

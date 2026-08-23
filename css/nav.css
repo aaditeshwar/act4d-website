@@ -57,3 +57,33 @@
   color: #1f6b4a;
   border-bottom-color: #1f6b4a;
 }
+
+.site-header a:link,
+.site-header a:visited {
+  color: #141414;
+  text-decoration: none;
+  background: transparent;
+}
+
+.site-header a:hover,
+.site-header a:focus,
+.site-header a.is-current {
+  color: #1f6b4a;
+  background: transparent;
+}
+
+.site-footer {
+  max-width: 72rem;
+  margin: 2rem auto 0;
+  padding: 0 1.25rem 2.5rem;
+  color: #5c5c5c;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.site-footer p {
+  margin: 0;
+  padding-top: 1rem;
+  border-top: 1px solid #e6e1d6;
+}

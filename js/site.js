@@ -8,6 +8,9 @@
 
   const NAV = [
     { id: "home", href: "index.html", label: "ACT4D" },
+    { id: "core", href: "https://core-stack.org/", label: "CoRE stack", external: true },
+    { id: "gramvaani", href: "https://gramvaani.org/", label: "Gram Vaani", external: true },
+    { id: "book", href: "act.html", label: "Book" },
     { id: "publications", href: "publications.html", label: "Publications" },
     { id: "archive", href: "archive.html", label: "Archived website" },
     { id: "aseth", href: "aseth.html", label: "Aaditeshwar Seth", align: "end" }
@@ -118,6 +121,10 @@
         a.classList.add("is-current");
       }
       if (item.id === "home") a.classList.add("wordmark");
+      if (item.external) {
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+      }
       (item.align === "end" ? end : start).appendChild(a);
     });
 
@@ -189,14 +196,14 @@
   }
 
   async function loadPosts() {
-    const response = await fetch(LINKEDIN_CSV_URL);
+    const response = await fetch(LINKEDIN_CSV_URL, { cache: "no-store" });
     if (!response.ok) throw new Error("Could not load LinkedIn CSV");
     return rowsToPosts(parseCsv(await response.text()));
   }
 
   async function loadMarkdown(url, contentEl) {
     try {
-      const response = await fetch(url);
+      const response = await fetch(url, { cache: "no-store" });
       if (!response.ok) throw new Error("Could not load " + url);
       contentEl.innerHTML = marked.parse(await response.text());
     } catch (err) {

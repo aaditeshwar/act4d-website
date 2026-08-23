@@ -1,10 +1,8 @@
 # Publications
 
-*Papers, chapters, and related writing by Aaditeshwar Seth. PDF and supplementary links point to files on the [original publications page](https://www.cse.iitd.ernet.in/~aseth/publications.html).*
-
 ## Book - Technology and (Dis)Empowerment: A Call to Technologists
 
-My book, *Technology and (Dis)Empowerment: A Call to Technologists* [[summary](https://www.cse.iitd.ernet.in/~aseth/act.html)], published in 2022 by Emerald Publishing, reflects much of my learning gained over the last decade and a half on the relationship between technology, the political economy of technology, and social development. The preface and introduction are available [here](https://www.cse.iitd.ernet.in/~aseth/Technologies_that_Empower.pdf). Please feel free to ask me for my local electronic version.
+My book, *Technology and (Dis)Empowerment: A Call to Technologists* [[summary](act.html)], published in 2022 by Emerald Publishing, reflects much of my learning gained over the last decade and a half on the relationship between technology, the political economy of technology, and social development. The preface and introduction are available [here](https://www.cse.iitd.ernet.in/~aseth/Technologies_that_Empower.pdf). Please feel free to ask me for my local electronic version.
 
 I have written a few short articles of 1500-2000 words about different aspects covered in the book.
 

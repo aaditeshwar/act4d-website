@@ -1,10 +1,8 @@
 # Aaditeshwar Seth
 
-*Professor, Department of Computer Science and Engineering, IIT Delhi. This page is a markdown edition of the [original faculty homepage](https://www.cse.iitd.ernet.in/~aseth/).*
+*Professor, Department of Computer Science and Engineering, and ANSK School of Information Technology, IIT Delhi*
 
-![Aaditeshwar Seth](images/aadi-crop.jpg)
-
-I run the [ACT4D (Appropriate Computing Technologies for Development)](index.html) research group. Areas of interest:
+I run the [ACT4D (Appropriate Computing Technologies for Development)](index.html) research group. 
 
 - Environment and natural resource management for community-based development ([video](https://www.youtube.com/watch?v=DcznjfVBruo))
 - Analysis of factors impeding socio-economic development in rural areas
@@ -15,23 +13,21 @@ I run the [ACT4D (Appropriate Computing Technologies for Development)](index.htm
 
 **Email:** aseth -at- cse -dot- iitd -dot- ac -dot- in
 
-I joined IIT Delhi in 2009, after a PhD with [Prof. S. Keshav](http://www.cs.uwaterloo.ca/~keshav) and [Prof. R. Cohen](http://ai.uwaterloo.ca/~rcohen/) at the University of Waterloo. In 2009 I co-founded [Gram Vaani](https://gramvaani.org/), a social enterprise for community media in rural India. In 2019 my students and I released the [Giant Economy Monitor](http://act4d.iitd.ac.in/act4dgem/index.htm) to track biases in Indian policymaking. In 2022 I published *Technology and (Dis)Empowerment: A Call to Technologists* (Emerald). Previews are on [Google Books](https://books.google.co.in/books?id=k96DEAAAQBAJ&printsec=frontcover#v=onepage&q&f=false). The preface, introduction, and foreword (by [Tim Unwin](https://pure.royalholloway.ac.uk/portal/en/persons/tim-unwin(bfad958b-8f3b-410a-9073-9645be169a85).html)) are [here](https://www.cse.iitd.ernet.in/~aseth/Technologies_that_Empower.pdf), and a [summary](https://www.cse.iitd.ernet.in/~aseth/act.html) is on the original site. Write to me if you would like a local electronic copy.
+I joined IIT Delhi in 2009, after a PhD with [Prof. S. Keshav](http://www.cs.uwaterloo.ca/~keshav) and [Prof. R. Cohen](http://ai.uwaterloo.ca/~rcohen/) at the University of Waterloo. In 2009 I co-founded [Gram Vaani](https://gramvaani.org/), a social enterprise for community media in rural India. In 2019 my students and I released the [Giant Economy Monitor](http://act4d.iitd.ac.in/act4dgem/index.htm) to track biases in Indian policymaking. In 2022 I published *Technology and (Dis)Empowerment: A Call to Technologists* (Emerald). Previews are on [Google Books](https://books.google.co.in/books?id=k96DEAAAQBAJ&printsec=frontcover#v=onepage&q&f=false). The preface, introduction, and foreword (by [Tim Unwin](https://pure.royalholloway.ac.uk/portal/en/persons/tim-unwin(bfad958b-8f3b-410a-9073-9645be169a85).html)) are [here](https://www.cse.iitd.ernet.in/~aseth/Technologies_that_Empower.pdf), and a [summary](act.html) is on this site. Write to me if you would like a local electronic copy.
 
-Most of my research now uses ICTs for environment monitoring and natural resource management so rural communities can adapt to a changing climate. That work is the [CoRE Stack](https://core-stack.org).
-
-[Gram Vaani manifesto](https://gramvaani.org/the-mobilevaani-manifesto/) · [More about the book](https://www.cse.iitd.ernet.in/~aseth/act.html) · [CoRE Stack tools](https://core-stack.org/tools-2/)
+All of my research is now in using ICTs for environment monitoring and natural resource management so rural communities can adapt to a changing climate. That work is the [CoRE Stack](https://core-stack.org).
 
 ## Openings
 
 If you want to join the group, read the [note on the passion and ideals that drive the work](https://www.cse.iitd.ernet.in/~aseth/research-at-act4d.pdf).
 
-We are looking for students at all levels (PhD / Masters / Bachelors), research assistants, post-doctoral fellows, and software engineers with 0–8 years of experience, to build the CoRE Stack. See [ongoing projects](https://www.cse.iitd.ernet.in/~aseth/ongoing-projects-24-25.html) and [PhD topic ideas](https://www.cse.iitd.ernet.in/~aseth/phd-topics-24-25.html). Students should email a CV and read the [research philosophy](https://www.cse.iitd.ernet.in/~aseth/research-at-act4d.pdf). Research assistants: [job description](https://www.cse.iitd.ernet.in/~aseth/research_associate_position_eo.pdf). Software engineers: [openings on the CoRE Stack site](https://core-stack.org/openings-software-engineer-geospatial-technologies/).
+We are looking for students at all levels (PhD / Masters / Bachelors), research assistants, post-doctoral fellows, and software engineers with 0–8 years of experience, to build the CoRE Stack. See [ongoing projects](ongoing-projects-24-25.html) and [PhD topic ideas](phd-topics-24-25.html). Students should email a CV and read the [research philosophy](https://www.cse.iitd.ernet.in/~aseth/research-at-act4d.pdf). Research assistants: [job description](https://www.cse.iitd.ernet.in/~aseth/research_associate_position_eo.pdf). Software engineers: [openings on the CoRE Stack site](https://core-stack.org/openings-software-engineer-geospatial-technologies/).
 
 Short-term (under 6 months) and remote internships are not currently supported. Approach through [C4GT](https://codeforgovtech.in/) or [FOSS United](https://fossunited.org/), or take up issues on the [CoRE Stack GitHub](https://github.com/core-stack-org/core-stack-backend). Direct emails about short internships may not get a reply.
 
 [Follow the CoRE Stack on LinkedIn](https://www.linkedin.com/company/core-stack/).
 
-*The sections below are no longer actively maintained on the original page (last noted March 2019), except where later facts are obvious.*
+*The sections below are no longer actively maintained (last noted March 2019).*
 
 ## Current work
 
@@ -62,6 +58,8 @@ Most of this work is documented on the [ACT4D site](index.html). Current strands
 - 2014: Economic Times, 14 startups to watch
 - 2010: Economic Times Power of Ideas seed grant
 
+
+
 ## Teaching
 
 Links are typically to the first offering of the course.
@@ -80,6 +78,8 @@ Links are typically to the first offering of the course.
 - *SIV861 Short ICTD module (2010–11 sem 1)*: [archive](archive.html#/introduction-to-ictd-short)
 - *CSL374 Computer Networks (2009–10 sem 2)*: first course taught; [molecular communication assignment](http://www.cse.iitd.ernet.in/~aseth/assg/funnycells/funnycells.html), [traceroute](http://www.cse.iitd.ernet.in/~aseth/assg/traceroute.pdf), [proxy](http://www.cse.iitd.ernet.in/~aseth/assg/proxy.pdf), [bandwidth measurements](http://www.cse.iitd.ernet.in/~aseth/assg/bwtests/bwprobing.html), [P2P Bluetooth](http://www.cse.iitd.ernet.in/~aseth/assg/bluetooth/bluetoothlogs.html)
 
+
+
 ## PhD students
 
 - [Zahir Koradia](https://www.linkedin.com/in/zahirkoradia/?originalSubdomain=uk), with Prof. Bhaskaran Raman (IIT Bombay). *Exploring the Role of ICTs in Community Radio Stations in India.* Graduated 2015. Head of Engineering, Up Learn, UK.
@@ -89,11 +89,20 @@ Links are typically to the first offering of the course.
 - [Anirban Sen](http://www.cse.iitd.ernet.in/~anirban/). *A Computer-based Approach to Building a Political Economy Monitor for India.*
 - [Chahat Bansal](http://chahatbansal.com/). *Making Big-Data Actionable Through Bottom-up Contextual Information.* (PhD completed 2026.)
 
+
+
 ## Documents
 
 - [Publications](publications.html)
+- [Ongoing projects](ongoing-projects-24-25.html)
+- [PhD topic ideas](phd-topics-24-25.html)
+- [News (2006–2009)](news.html)
+- [Old links page](links.html)
+- [Technology and (Dis)Empowerment](act.html)
 - [Book extract](https://www.cse.iitd.ernet.in/~aseth/Technologies_that_Empower.pdf)
 - [PhD thesis](http://www.cse.iitd.ernet.in/~aseth/thesisuw.pdf)
+
+
 
 ## Some books
 
