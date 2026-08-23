@@ -1,0 +1,314 @@
+:root {
+  --bg: #f6f4ef;
+  --surface: #fffcf7;
+  --ink: #141414;
+  --muted: #5c5c5c;
+  --line: #e6e1d6;
+  --accent: #1f6b4a;
+  --accent-ink: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.home {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  text-align: left;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover,
+a:focus {
+  color: #000;
+}
+
+.site-nav a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav a.is-current {
+  color: var(--accent);
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+}
+
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+  z-index: 20;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.page {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 960px) {
+  .page-grid {
+    grid-template-columns: minmax(0, 1fr) 18.5rem;
+    gap: 3rem;
+  }
+}
+
+.prose h1 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.75rem;
+}
+
+.prose h1 + p {
+  font-size: 1.12rem;
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.prose h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 2.4rem 0 0.85rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.prose h3 {
+  font-size: 1.05rem;
+  margin: 1.4rem 0 0.4rem;
+}
+
+.prose p,
+.prose li {
+  margin: 0.7rem 0;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.15rem;
+}
+
+.prose li + li {
+  margin-top: 0.35rem;
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2rem 0;
+}
+
+.prose em {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.latest-links {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.latest-links li {
+  margin: 0;
+}
+
+.latest-links a {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.95rem 1rem;
+  border-radius: 10px;
+}
+
+.latest-links a:hover,
+.latest-links a:focus {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.linkedin-feed {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.15rem 1.2rem 1.25rem;
+}
+
+.linkedin-feed:empty {
+  display: none;
+}
+
+.linkedin-feed h2 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.55rem;
+}
+
+.linkedin-follow {
+  margin: 0 0 1rem;
+}
+
+.linkedin-follow a {
+  display: inline-block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+.linkedin-follow a:hover,
+.linkedin-follow a:focus {
+  color: #000;
+}
+
+.prose img {
+  max-width: 11rem;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 0 1.25rem;
+}
+
+.linkedin-feed ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.linkedin-feed li {
+  margin: 0;
+}
+
+.linkedin-feed ul a {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 0.7rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.linkedin-feed ul a:hover,
+.linkedin-feed ul a:focus {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.linkedin-feed time,
+.linkedin-all time {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
+.linkedin-title {
+  display: block;
+}
+
+.linkedin-all {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.linkedin-all a {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.linkedin-all a:hover,
+.linkedin-all a:focus {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.page-single {
+  max-width: 44rem;
+}
+
+.linkedin-feed-more {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 960px) {
+  .linkedin-feed {
+    position: sticky;
+    top: 4.25rem;
+  }
+}
+
+.site-footer {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 2.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.site-footer p {
+  margin: 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}

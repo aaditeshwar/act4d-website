@@ -1,0 +1,196 @@
+{
+  "site": {
+    "title": "ACT4D",
+    "fullTitle": "ACT4D: Appropriate Computing Technologies for Development",
+    "home": "about"
+  },
+  "menu": [
+    {
+      "id": "about",
+      "title": "About",
+      "content": "content/about.md",
+      "status": "ready",
+      "children": []
+    },
+    {
+      "id": "in-the-media",
+      "title": "In the media",
+      "content": "content/in-the-media.md",
+      "status": "ready",
+      "children": []
+    },
+    {
+      "id": "projects",
+      "title": "Projects",
+      "generate": "children",
+      "status": "ready",
+      "children": [
+        {
+          "id": "natural-resource-management",
+          "title": "Natural Resource Management",
+          "content": "content/projects/natural-resource-management.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "book-ethics-in-ict-systems",
+          "title": "Book: Ethics in ICT systems",
+          "content": "content/projects/book-ethics-in-ict-systems.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "giant-economy-monitor",
+          "title": "Giant Economy Monitor",
+          "content": "content/projects/giant-economy-monitor.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "community-media",
+          "title": "Community media",
+          "content": "content/projects/community-media.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "social-accountability",
+          "title": "Social accountability",
+          "content": "content/projects/social-accountability.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "community-radio",
+          "title": "Community radio",
+          "content": "content/projects/community-radio.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "2g-3g-qos-measurements",
+          "title": "2G/3G QoS measurements",
+          "content": "content/projects/2g-3g-qos-measurements.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "flaky-internet-scenarios",
+          "title": "Flaky Internet scenarios",
+          "content": "content/projects/flaky-internet-scenarios.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "osn-assisted-cdns",
+          "title": "OSN assisted CDNs",
+          "content": "content/projects/osn-assisted-cdns.md",
+          "status": "ready",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "courses",
+      "title": "Courses",
+      "generate": "children",
+      "status": "ready",
+      "children": [
+        {
+          "id": "ictd-environmental-focus",
+          "title": "ICTD - environmental focus",
+          "content": "content/courses/ictd-environmental-focus.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "ethics-in-applied-cs",
+          "title": "Ethics in Applied CS",
+          "content": "content/courses/ethics-in-applied-cs.md",
+          "status": "ready",
+          "children": [
+            {
+              "id": "lecture-videos",
+              "title": "Lecture videos",
+              "content": "content/courses/ethics-in-applied-cs/lecture-videos.md",
+              "status": "ready",
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "data-science-for-development",
+          "title": "Data science for development",
+          "content": "content/courses/data-science-for-development.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "media-analysis",
+          "title": "Media analysis",
+          "content": "content/courses/media-analysis.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "introduction-to-ictd-long",
+          "title": "Introduction to ICTD - long",
+          "content": "content/courses/introduction-to-ictd-long.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "introduction-to-ictd-short",
+          "title": "Introduction to ICTD - short",
+          "content": "content/courses/introduction-to-ictd-short.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "advanced-comp-networks",
+          "title": "Advanced Computer Networks",
+          "content": "content/courses/advanced-comp-networks.md",
+          "status": "ready",
+          "children": []
+        },
+        {
+          "id": "internet-edge-optimization",
+          "title": "Internet Edge Optimization",
+          "content": "content/courses/internet-edge-optimization.md",
+          "status": "ready",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "title": "People",
+      "content": "content/people.md",
+      "status": "ready",
+      "children": []
+    },
+    {
+      "id": "project-openings",
+      "title": "Project openings",
+      "content": "content/project-openings.md",
+      "status": "ready",
+      "children": []
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "content": "content/contact.md",
+      "status": "ready",
+      "children": []
+    }
+  ],
+  "unlisted": [
+    {
+      "id": "research-groups",
+      "title": "Research groups",
+      "content": "content/research-groups.md",
+      "status": "pending",
+      "note": "Linked from the home page, not shown in the main menu."
+    }
+  ]
+}
