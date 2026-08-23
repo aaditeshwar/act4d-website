@@ -26,7 +26,7 @@
 
 <script type="text/javascript" src="../../library/leaflet/leaflet.js"></script>
 <script src="../../library/leaflet/leaflet.hotline.js"></script>
-<script src="../../GeoJSON_Files/main1.geojson"></script>
+<script src="../../GeoJSON_Files/main1.trimmed.geojson"></script>
 
 
 
