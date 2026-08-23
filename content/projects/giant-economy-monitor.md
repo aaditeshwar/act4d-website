@@ -1,6 +1,6 @@
 # Giant Economy Monitor
 
-**Alert:** The [GEM website](http://act4d.iitd.ac.in/act4dgem/index.htm) is now up!
+**Alert:** The [GEM website](gem-website/index.htm) is now up!
 
 **Why**
 

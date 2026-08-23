@@ -63,9 +63,9 @@ Short-term (under 6 months) and remote internships are not currently supported. 
 
 **Graduated PhD and MSR students:** [Zahir Koradia](https://www.linkedin.com/in/zahirkoradia/), [Amit Ruhela](https://tacc.utexas.edu/about/staff-directory/amit-ruhela/), [Dipanjan Chakraborty](https://www.bits-pilani.ac.in/hyderabad/dipanjan-chakraborty/), [Aparna Moitra](https://www.linkedin.com/in/aparna-moitra/), [Anirban Sen](https://sites.google.com/ashoka.edu.in/anirbansen/home?authuser=0), [Chahat Bansal](https://www.linkedin.com/in/chahat-bansal-dec23/), Namrata Arora, Nishant Gupta, Jack Roh
 
-**Research associates who have worked with the group:** [Aman Khullar](https://amankhullar.github.io/), [Aravindh Raman](https://aravindhr.am/), [Raman Kumar](https://ramank1137.github.io/), Shubham Kumar, Apoorva Kashyap, Asheesh Sharma
+**Research associates who have worked with the group:** [Aman Khullar](https://amankhullar.github.io/), [Aravindh Raman](https://aravindhr.am/), [Raman Kumar](https://ramank1137.github.io/), Shubham Kumar, Apoorva Kashyap, Asheesh Sharma, Atharv Dabhi
 
-**Current students:** [Shivani A. Mehta](https://www.linkedin.com/in/shivani-a-mehta-403597127/), [Saurabh Jain](https://www.linkedin.com/in/saurjain/), [Dhruvi Goyal](https://www.linkedin.com/in/dhruvi-goyal/), [Ashima Mittal](https://www.linkedin.com/in/ashima-mittal-iitd/), Jaskaran Singh, Yash Gupta, Mayank Goyal, Sagar Parshottam Madhudiya, Gaurav Rajput, Anamitra Singha
+**Current students:** [Shivani A. Mehta](https://www.linkedin.com/in/shivani-a-mehta-403597127/), [Saurabh Jain](https://www.linkedin.com/in/saurjain/), [Dhruvi Goyal](https://www.linkedin.com/in/dhruvi-goyal/), [Ashima Mittal](https://www.linkedin.com/in/ashima-mittal-iitd/), Jaskaran Singh, Yash Gupta, Mayank Goyal, Sagar Parshottam Madhudiya, Gaurav Rajput, Anamitra Singha, Mansi Manjrekar, Shreyansh Jain
 
 ---
 
@@ -81,7 +81,7 @@ Our largest body of work then grew out of Gram Vaani on designing, running, and 
 
 **We realized along the way that good things are often hard to scale though.** 
 
-From around 2018 the group turned to studying the political economy of development itself: Analyses of media bias, corporate–government interlocks, and ideology in Indian mass media, and the *Giant Economy Monitor* was built in 2019 to track policy bias. 
+From around 2018 the group turned to studying the political economy of development itself: Analyses of media bias, corporate–government interlocks, and ideology in Indian mass media, and the *[Giant Economy Monitor](gem-website/index.htm)* was built in 2019 to track policy bias. 
 
 This line of thinking, together with understanding the ethics-of-technology fed into the 2022 book, *Technology and (Dis)Empowerment: A Call to Technologists*, and into shorter position pieces such as *Missing Publics in Digital Public Goods: The Need to Build Technologies for Communities* ([The India Forum](https://www.theindiaforum.in/forum/bringing-back-public-digital-public-goods), 2022), which argued that digital public infrastructure needs to be built as "technologies for communities" rather than imposed top-down — the same critique of individualized, Aadhaar-style digital ID that runs through the book's epilogue.
 

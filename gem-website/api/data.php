@@ -1,93 +1,45 @@
 <?php
-    $event=$_GET['event']; //event number
-    $np=$_GET['np']; //newspaper name
-    $coverage=$_GET['coverage'];  //type of mass media coverage
-    $temp="'";
-    header( 'Content-Type: application/json' );
-    //credentials
-    $host = "act4dgem.cse.iitd.ac.in"; 
-    $user = "debanjan_final"; 
-    $pass = "Deb@12345"; 
-    $db = "debanjan_media_database";
-    //error handling
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-    $db_connection = pg_connect ("host=$host port=5432 dbname=$db user=$user password=$pass connect_timeout=5")or die("error");
-    if (!$db_connection) { 
-        echo "error"; 
-      }
-   //necessary queries
-    $main_query='SELECT * FROM public.massmedia_aspectwise_coverage WHERE newspaper=' . $temp . ''. $np .'' . $temp . ' AND event_id='. $event .'';
-    $main_result = pg_query($db_connection,$main_query);
-    $secondary_query='SELECT * FROM public.aspect_info WHERE event_id='. $event .'';
-    $secondary_result = pg_query($db_connection,$secondary_query);
+header('Content-Type: application/json');
 
+$event = isset($_GET['event']) ? preg_replace('/[^0-9]/', '', $_GET['event']) : '';
+$np = isset($_GET['np']) ? preg_replace('/[^a-z0-9]/', '', strtolower($_GET['np'])) : '';
+$coverage = isset($_GET['coverage']) ? $_GET['coverage'] : 'aspect';
 
-    if ( !$main_result ) {
-      $message  = 'Invalid query: ' . $db_connection->error . "n";
-      $message .= 'Whole query: ' . $main_query;
-      die( $message );
-    }
-    if ( !$secondary_result ) {
-        $message  = 'Invalid query: ' . $db_connection->error . "n";
-        $message .= 'Whole query: ' . $secondary_query;
-        die( $message );
-      }  
+$kind = ($coverage === 'sentiment') ? 'AspectSentiment' : 'AspectCoverage';
+$path = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'csv data' . DIRECTORY_SEPARATOR
+	. 'Mass Media' . DIRECTORY_SEPARATOR . $event . DIRECTORY_SEPARATOR . $np
+	. DIRECTORY_SEPARATOR . $kind . DIRECTORY_SEPARATOR . 'Mass' . DIRECTORY_SEPARATOR . 'GraphData.csv';
 
+if ($event === '' || $np === '' || !is_readable($path)) {
+	echo '[]';
+	exit;
+}
 
-   //data generation
-    $data1 = array();
-    $data2 = array();
+$fh = fopen($path, 'r');
+if ($fh === false) {
+	echo '[]';
+	exit;
+}
 
-    while ( $row1 = pg_fetch_row($main_result) ) {
-      $data1[] = $row1;
-    }
-    while ( $row2 = pg_fetch_row($secondary_result) ) {
-      $data2[] = $row2;
-    }
-    $data = array();
-    $n= count($data2);
+$header = fgetcsv($fh);
+$data = array();
+while (($row = fgetcsv($fh)) !== false) {
+	if (!isset($row[0]) || $row[0] === '') {
+		continue;
+	}
+	$item = array($row[0], isset($row[1]) ? 0 + $row[1] : 0);
+	if (isset($row[2]) && $row[2] !== '') {
+		$item[] = 0 + $row[2];
+	}
+	$data[] = $item;
+}
+fclose($fh);
 
-    
+usort($data, function ($a, $b) {
+	if ($a[1] == $b[1]) {
+		return 0;
+	}
+	return ($a[1] < $b[1]) ? -1 : 1;
+});
 
-
-    if ($coverage=='aspect'){
-      for ($i = 0; $i < $n; $i++) {
-        $data[$i][0]=$data2[$i][2];
-        $data[$i][1]=$data1[$i][3];
-  
-      }
-      for ($i = 0; $i < $n; $i++) {
-        for ($j=1; $j < $n-$i ; $j++){
-          if ($data[$j-1][1]>$data[$j][1]){
-            $temporary=$data[$j-1];
-            $data[$j-1]=$data[$j];
-            $data[$j]=$temporary;
-          }
-        }
-      }
-    } elseif ($coverage=='sentiment'){
-      for ($i = 0; $i < $n; $i++) {
-        $data[$i][0]=$data2[$i][2];
-        $data[$i][1]=$data1[$i][4];
-        $data[$i][2]=$data1[$i][5];
-      }
-      for ($i = 0; $i < $n; $i++) {
-        for ($j=1; $j < $n-$i ; $j++){
-          if ($data[$j-1][1]>$data[$j][1]){
-            $temporary=$data[$j-1];
-            $data[$j-1]=$data[$j];
-            $data[$j]=$temporary;
-          }
-        }
-      }
-    }
-
-    //JSON   
-    echo json_encode( $data );   
-    //END CONNECTION 
-    pg_free_result($main_result);
-    pg_free_result($secondary_result);
-    pg_close($db_connection);
-?>
+echo json_encode($data);

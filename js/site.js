@@ -10,7 +10,8 @@
     { id: "home", href: "index.html", label: "ACT4D" },
     { id: "core", href: "https://core-stack.org/", label: "CoRE stack", external: true },
     { id: "gramvaani", href: "https://gramvaani.org/", label: "Gram Vaani", external: true },
-    { id: "book", href: "act.html", label: "Book" },
+    { id: "book", href: "act.html", label: "ACT book" },
+    { id: "gem", href: "gem-website/index.htm", label: "Giant Economy Monitor" },
     { id: "publications", href: "publications.html", label: "Publications" },
     { id: "archive", href: "archive.html", label: "Archived website" },
     { id: "aseth", href: "aseth.html", label: "Aaditeshwar Seth", align: "end" }

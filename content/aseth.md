@@ -13,7 +13,7 @@ I run the [ACT4D (Appropriate Computing Technologies for Development)](index.htm
 
 **Email:** aseth -at- cse -dot- iitd -dot- ac -dot- in
 
-I joined IIT Delhi in 2009, after a PhD with [Prof. S. Keshav](http://www.cs.uwaterloo.ca/~keshav) and [Prof. R. Cohen](http://ai.uwaterloo.ca/~rcohen/) at the University of Waterloo. In 2009 I co-founded [Gram Vaani](https://gramvaani.org/), a social enterprise for community media in rural India. In 2019 my students and I released the [Giant Economy Monitor](http://act4d.iitd.ac.in/act4dgem/index.htm) to track biases in Indian policymaking. In 2022 I published *Technology and (Dis)Empowerment: A Call to Technologists* (Emerald). Previews are on [Google Books](https://books.google.co.in/books?id=k96DEAAAQBAJ&printsec=frontcover#v=onepage&q&f=false). The preface, introduction, and foreword (by [Tim Unwin](https://pure.royalholloway.ac.uk/portal/en/persons/tim-unwin(bfad958b-8f3b-410a-9073-9645be169a85).html)) are [here](https://www.cse.iitd.ernet.in/~aseth/Technologies_that_Empower.pdf), and a [summary](act.html) is on this site. Write to me if you would like a local electronic copy.
+I joined IIT Delhi in 2009, after a PhD with [Prof. S. Keshav](http://www.cs.uwaterloo.ca/~keshav) and [Prof. R. Cohen](http://ai.uwaterloo.ca/~rcohen/) at the University of Waterloo. In 2009 I co-founded [Gram Vaani](https://gramvaani.org/), a social enterprise for community media in rural India. In 2019 my students and I released the [Giant Economy Monitor](gem-website/index.htm) to track biases in Indian policymaking. In 2022 I published *Technology and (Dis)Empowerment: A Call to Technologists* (Emerald). Previews are on [Google Books](https://books.google.co.in/books?id=k96DEAAAQBAJ&printsec=frontcover#v=onepage&q&f=false). The preface, introduction, and foreword (by [Tim Unwin](https://pure.royalholloway.ac.uk/portal/en/persons/tim-unwin(bfad958b-8f3b-410a-9073-9645be169a85).html)) are [here](https://www.cse.iitd.ernet.in/~aseth/Technologies_that_Empower.pdf), and a [summary](act.html) is on this site. Write to me if you would like a local electronic copy.
 
 All of my research is now in using ICTs for environment monitoring and natural resource management so rural communities can adapt to a changing climate. That work is the [CoRE Stack](https://core-stack.org).
 
@@ -37,7 +37,7 @@ I then saw that policy support and capital often block scale, and that exploitat
 
 Building these systems, and watching similar efforts by firms and governments, raised the question of designers’ and managers’ vested interests. Only strong ethical values can steer ICT systems. That argument is the 2022 book.
 
-Most of this work is documented on the [ACT4D site](index.html). Current strands include [ethics of ICT design and management](archive.html#/book-ethics-in-ict-systems), [community media](https://gramvaani.org/), and the [Giant Economy Monitor](http://act4d.iitd.ac.in/act4dgem/index.htm). Earlier work included [delay-tolerant networks](publications.html) and [recommendation systems](publications.html).
+Most of this work is documented on the [ACT4D site](index.html). Current strands include [ethics of ICT design and management](archive.html#/book-ethics-in-ict-systems), [community media](https://gramvaani.org/), and the [Giant Economy Monitor](gem-website/index.htm). Earlier work included [delay-tolerant networks](publications.html) and [recommendation systems](publications.html).
 
 ## Awards
 

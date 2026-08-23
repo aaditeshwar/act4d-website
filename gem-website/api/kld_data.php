@@ -1,62 +1,36 @@
 <?php
-    $event=$_GET['event']; //event number
-    $temp="'";
-    header( 'Content-Type: application/json' );
-    //credentials
-    $host = "act4dgem.cse.iitd.ac.in"; 
-    $user = "debanjan_final"; 
-    $pass = "Deb@12345"; 
-    $db = "debanjan_media_database";
-    //error handling
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-    $db_connection = pg_connect ("host=$host port=5432 dbname=$db user=$user password=$pass connect_timeout=5")or die("error");
-    if (!$db_connection) { 
-        echo "error"; 
-      }
-   //necessary queries
-    $main_query='SELECT * FROM public.kl_div_result WHERE event_id='. $event .'';
-    $main_result = pg_query($db_connection,$main_query);
+header('Content-Type: application/json');
 
+$event = isset($_GET['event']) ? preg_replace('/[^0-9]/', '', $_GET['event']) : '';
+$path = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'csv data' . DIRECTORY_SEPARATOR
+	. 'Mass Media' . DIRECTORY_SEPARATOR . $event . DIRECTORY_SEPARATOR . 'kld.csv';
 
-    if ( !$main_result ) {
-      $message  = 'Invalid query: ' . $db_connection->error . "n";
-      $message .= 'Whole query: ' . $main_query;
-      die( $message );
-    }
+if ($event === '' || !is_readable($path)) {
+	echo '[]';
+	exit;
+}
 
+$fh = fopen($path, 'r');
+if ($fh === false) {
+	echo '[]';
+	exit;
+}
 
-   //data generation
-    $data1 = array();
+fgetcsv($fh);
+$data = array();
+while (($row = fgetcsv($fh)) !== false) {
+	if (!isset($row[0]) || $row[0] === '') {
+		continue;
+	}
+	$data[] = array($row[0], isset($row[1]) ? 0 + $row[1] : 0);
+}
+fclose($fh);
 
-    while ( $row1 = pg_fetch_row($main_result) ) {
-      $data1[] = $row1;
-    }
+usort($data, function ($a, $b) {
+	if ($a[1] == $b[1]) {
+		return 0;
+	}
+	return ($a[1] < $b[1]) ? -1 : 1;
+});
 
-    $data = array();
-    $n= count($data1);
-
-    
-    for ($i = 0; $i < $n; $i++) {
-      $data[$i][0]=$data1[$i][1];
-      $data[$i][1]=$data1[$i][2];
-  
-    }
-    for ($i = 0; $i < $n; $i++) {
-      for ($j=1; $j < $n-$i ; $j++){
-        if ($data[$j-1][1]>$data[$j][1]){
-          $temporary=$data[$j-1];
-          $data[$j-1]=$data[$j];
-          $data[$j]=$temporary;
-        }
-      }
-    }
-
-
-    //JSON   
-    echo json_encode( $data );   
-    //END CONNECTION 
-    pg_free_result($main_result);
-    pg_close($db_connection);
-?>
+echo json_encode($data);
