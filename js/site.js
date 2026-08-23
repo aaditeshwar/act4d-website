@@ -12,7 +12,7 @@
     { id: "gramvaani", href: "https://gramvaani.org/", label: "Gram Vaani", external: true },
     { id: "book", href: "act.html", label: "ACT book" },
     { id: "gem", href: "gem-website/index.htm", gem: true, label: "Giant Economy Monitor" },
-    { id: "publications", href: "publications.html", label: "Publications" },
+    { id: "publications", href: "publications-dynamic.html", label: "Publications" },
     { id: "archive", href: "archive.html", label: "Archived website" },
     { id: "aseth", href: "aseth.html", label: "Aaditeshwar Seth", align: "end" }
   ];

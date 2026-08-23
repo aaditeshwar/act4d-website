@@ -29,7 +29,7 @@ Short-term (under 6 months) and remote internships are not currently supported. 
 
 [Follow the CoRE Stack on LinkedIn](https://www.linkedin.com/company/core-stack/).
 
-*The sections below are no longer actively maintained (last noted March 2019).*
+##The sections below are no longer actively maintained (last noted March 2019).##
 
 ## Current work
 
