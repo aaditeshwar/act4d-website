@@ -3,6 +3,7 @@
   const feedEl = document.getElementById("linkedin-feed");
 
   ACT4D.renderNav("home");
+  ACT4D.applyUrls(document);
 
   function styleLatest(root) {
     const headings = root.querySelectorAll("h2");

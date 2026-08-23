@@ -3,6 +3,7 @@
   const page = root.getAttribute("data-page") || "home";
   const md = root.getAttribute("data-md");
   ACT4D.renderNav(page);
+  ACT4D.applyUrls(document);
   const contentEl = document.getElementById("content");
   if (md && contentEl) {
     ACT4D.loadMarkdown(md, contentEl);

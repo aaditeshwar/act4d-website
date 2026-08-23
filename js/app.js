@@ -124,12 +124,13 @@
 
   async function renderMarkdown(item) {
     try {
-      const response = await fetch(item.content);
+      const response = await fetch(ACT4D.localUrl(item.content));
       if (!response.ok) {
         contentEl.innerHTML = pendingMarkup(item);
         return;
       }
       contentEl.innerHTML = marked.parse(await response.text());
+      ACT4D.applyUrls(contentEl);
     } catch (err) {
       contentEl.innerHTML =
         "<h2>Could not load page</h2><p>Serve this folder over HTTP so the browser can read markdown files.</p>";
@@ -159,7 +160,7 @@
 
   async function init() {
     try {
-      const response = await fetch(MENU_URL);
+      const response = await fetch(ACT4D.localUrl(MENU_URL));
       siteData = await response.json();
     } catch (err) {
       contentEl.innerHTML =
