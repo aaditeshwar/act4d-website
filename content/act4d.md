@@ -13,11 +13,10 @@ Led by [Aaditeshwar Seth](aseth.html), the group works in the following areas:
 
 **Contact:** aseth [at] cse [dot] iitd [dot] ac [dot] in · Room 114, SIT building, IIT Delhi, New Delhi 110016
 
-
-
 ## Quick links
 
-- [Course: ICTs for Development and Sustainability, 2026](https://act4d.iitd.ac.in/ictd-2026/index.html) 
+- [Course: ICTs for Development and Sustainability, 2026](https://act4d.iitd.ac.in/ictd-2026/index.html)
+- [Course: Professional ethics and research writing, 2026](professional-ethics-2026/index.html)
 - Innovations: [CoRE Insights](http://act4d.iitd.ac.in/core-insights/), [Human–wildlife conflict mapping](https://act4d.iitd.ac.in/gdelt-wildlife/)
 - [CoRE stack](https://core-stack.org/), [LinkedIn page](https://www.linkedin.com/company/core-stack/)
 - [Gram Vaani](http://gramvaani.org/), [LinkedIn page](https://www.linkedin.com/company/gramvaani/)
@@ -79,19 +78,13 @@ Post-doctoral fellows who have worked with the group: [Ramneek Kaur](https://in.
 
 The genesis of the group traces to the KioskNet project at the University of Waterloo (Seth's PhD), and was carried forward at IIT Delhi with new innovations to improve rural Internet connectivity infrastructure and performance measurements. Extensive data from almost two dozen rural and urban sites were put forth as evidence to TRAI to improve their methodology for telcom operators to provide QoS reports.
 
-
-
 **We realized however that Internet connectivity is not enough in itself.**
 
 Our largest body of work then grew out of Gram Vaani on designing, running, and evaluating voice- and IVR-based participatory media platforms in rural India — from early design lessons through to community mobilization and grievance-redressal studies, and more recent work on AI-assisted moderation and automated question-answering for these platforms, and on the credibility and recommendation models (dating back to Seth's PhD) that decide what content participants see. A parallel strand studied the platforms' real-world effects — on maternal and child health behaviour, welfare-scheme grievance redressal, and civic participation — much of it conducted jointly with the Gram Vaani team.
 
-
-
 **We realized along the way that good things are often hard to scale though.**
 
 From around 2018 the group turned to studying the political economy of development itself: Analyses of media bias, corporate–government interlocks, and ideology in Indian mass media, and the *[Giant Economy Monitor](gem-website/index.htm)* was built in 2019 to track policy bias.
-
-
 
 This line of thinking, together with understanding the ethics-of-technology fed into the 2022 book, *Technology and (Dis)Empowerment: A Call to Technologists*, and into shorter position pieces such as *Missing Publics in Digital Public Goods: The Need to Build Technologies for Communities* ([The India Forum](https://www.theindiaforum.in/forum/bringing-back-public-digital-public-goods), 2022), which argued that digital public infrastructure needs to be built as "technologies for communities" rather than imposed top-down — the same critique of individualized, Aadhaar-style digital ID that runs through the book's epilogue.
 
@@ -100,7 +93,5 @@ This line of thinking, together with understanding the ethics-of-technology fed 
 **The result is the CoRE stack - Commoning for Resilience and Equality.** 
 
 From around 2019 we began using satellite imagery and remote sensing to track socio-economic development directly — land-use change near mining sites, city growth patterns, district development models from census data, and datasets like *IndiaSAT* for land-cover classification — building the geospatial and machine-learning capability that CoRE Stack now runs on.
-
-
 
 The CoRE Stack combines these geospatial layers with a nationally standardized **micro-watershed registry**, a field toolset (**Know Your Landscape**, **Commons Connect**) used by trained community "landscape stewards" to turn data into Detailed Project Reports for Gram Sabhas and schemes like MGNREGA, and a **neurosymbolic evidence engine** ("CoRE Insights") that diagnoses problems in landscapes. This had grown to 20+ partner CSOs across 9 states and roughly 90 tehsils using the CoRE stack, 430+ trained stewards, and integration work underway with government portals such as Yuktadhara. 

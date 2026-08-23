@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professional ethics in CS/IT — July 2026</title>
+  <meta name="description" content="Course page for Professional ethics in CS/IT, July 2026, IIT Delhi. Instructors: Aaditeshwar Seth and Parag Singla.">
+  <link rel="icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+<body class="home">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header" data-site-nav></header>
+  <main class="page page-single">
+    <article id="content" class="prose"></article>
+  </main>
+  <footer class="site-footer">
+    <p>ACT4D: Appropriate Computing Technologies for Development</p>
+  </footer>
+  <script src="../js/marked.min.js"></script>
+  <script src="../js/config.js"></script>
+  <script src="../js/site.js"></script>
+  <script>
+    (function () {
+      ACT4D.renderNav("home");
+      document.querySelectorAll(".site-nav a[href]").forEach(function (a) {
+        var href = a.getAttribute("href");
+        if (!href || /^(https?:|mailto:|#)/i.test(href) || href.indexOf("../") === 0) return;
+        a.setAttribute("href", "../" + href.replace(/^\.\//, ""));
+      });
+      ACT4D.loadMarkdown("course.md", document.getElementById("content"));
+    })();
+  </script>
+</body>
+</html>

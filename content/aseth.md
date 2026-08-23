@@ -29,7 +29,7 @@ Short-term (under 6 months) and remote internships are not currently supported. 
 
 [Follow the CoRE Stack on LinkedIn](https://www.linkedin.com/company/core-stack/).
 
-##The sections below are no longer actively maintained (last noted March 2019).##
+## The sections below are no longer actively maintained (last noted March 2019). 
 
 ## Current work
 
@@ -66,6 +66,7 @@ Most of this work is documented on the [ACT4D site](index.html). Current strands
 
 Links are typically to the first offering of the course.
 
+- *Professional ethics in CS/IT (July 2026)*: [course page](professional-ethics-2026/index.html)
 - *COL100 Introduction to Computer Science (2024–25 sem 2)*: [course page](https://www.cse.iitd.ac.in/~aseth/col100-2425/col100.html)
 - *SIL761 Introduction to ICTD, environmental focus (2021–22 sem 2)*: [archive](archive.html#/ictd-environmental-focus)
 - *COL100 (2020–21 sem 2)*: [course page](https://www.cse.iitd.ac.in/~aseth/col100-2021/col100.html)
@@ -103,6 +104,7 @@ Links are typically to the first offering of the course.
 - [Technology and (Dis)Empowerment](act.html)
 - [Book extract](https://www.cse.iitd.ernet.in/~aseth/Technologies_that_Empower.pdf)
 - [PhD thesis](http://www.cse.iitd.ernet.in/~aseth/thesisuw.pdf)
+- [Udai OMR software, 2006](https://www.cse.iitd.ernet.in/~aseth/udai/OMRProj/README.html)
 
 
 
