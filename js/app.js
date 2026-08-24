@@ -122,6 +122,29 @@
     return "<h2>" + item.title + "</h2>" + list(item.children || []);
   }
 
+  async function appendCsvLinks(csvPath) {
+    const response = await fetch(ACT4D.localUrl(csvPath), { cache: "no-store" });
+    if (!response.ok) return;
+    const rows = ACT4D.parseCsv(await response.text());
+    if (rows.length < 2) return;
+    const header = rows[0].map(function (h) { return h.trim().toLowerCase(); });
+    const iTitle = header.indexOf("title") >= 0 ? header.indexOf("title") : 0;
+    const iUrl = header.indexOf("url") >= 0 ? header.indexOf("url") : 1;
+    const ul = document.createElement("ul");
+    rows.slice(1).forEach(function (row) {
+      const url = (row[iUrl] || "").trim();
+      const title = (row[iTitle] || "").trim() || "TBD";
+      if (!url) return;
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = url;
+      a.textContent = title;
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    contentEl.appendChild(ul);
+  }
+
   async function renderMarkdown(item) {
     try {
       const response = await fetch(ACT4D.localUrl(item.content));
@@ -131,6 +154,7 @@
       }
       contentEl.innerHTML = marked.parse(await response.text());
       ACT4D.applyUrls(contentEl);
+      if (item.csv) await appendCsvLinks(item.csv);
     } catch (err) {
       contentEl.innerHTML =
         "<h2>Could not load page</h2><p>Serve this folder over HTTP so the browser can read markdown files.</p>";

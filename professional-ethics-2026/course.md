@@ -8,9 +8,7 @@
 
 ### 22 August, 9am–12pm
 
-**Guidelines for computing professionals:** ethics, plagiarism, conflict of interest, authorship, peer review
-
-[Slides here](aseth%20-%20ethics%20code.pdf)
+**Guidelines for computing professionals:** ethics, plagiarism, conflict of interest, authorship, peer review. [Slides here](aseth%20-%20ethics%20code.pdf)
 
 Academic rules and regulations already in place:
 
@@ -31,9 +29,7 @@ Additional:
 - [Reporting of ethics in health research (BMC Research Notes)](https://link.springer.com/article/10.1186/s13104-022-05908-5)
 - Local note: [aseth — ethics code (PDF)](aseth%20-%20ethics%20code.pdf)
 
-**Ethics of data-driven systems:** prominent faultlines and building guardrails
-
-*[Slides here](https://www.cse.iitd.ernet.in/~aseth/col707/2c%20algorithms.pdf)*
+**Ethics of data-driven systems:** prominent faultlines and building guardrails. *[Slides here](https://www.cse.iitd.ernet.in/~aseth/col707/2c%20algorithms.pdf)*
 
 Building systems that use data/AI:
 
@@ -45,9 +41,7 @@ Building systems that use data/AI:
 
 ### 29 August, 9am–12pm
 
-**Beyond regular ethics:** socio-technical power dynamics intermediated by technology
-
-*Slides: to be posted.*
+**Beyond regular ethics:** socio-technical power dynamics intermediated by technology. *Slides: to be posted.*
 
 Power dynamics intermediated by technology:
 
@@ -55,9 +49,7 @@ Power dynamics intermediated by technology:
 - [What's missing in the ACM Code of Ethics and Professional Conduct](https://interactions.acm.org/archive/view/may-june-2023/whats-missing-in-the-acm-code-of-ethics-and-professional-conduct)  *
 - [Questions for technologists](https://www.cse.iitd.ernet.in/~aseth/questions-for-technologists.pdf)
 
-**From examples → research → policy → compliance**
-
-*Slides: to be posted.*
+**From examples → research → policy → compliance.** *Slides: to be posted.*
 
 Key policies:
 
@@ -70,13 +62,9 @@ Key policies:
 
 ### 5 September, 9am–10:30am
 
-**Typical measures put in place for data privacy**
+**Typical measures put in place for data privacy.** *Slides: to be posted.*
 
-*Slides: to be posted.*
-
-**Typical measures put in place for data management and reliability**
-
-*Slides: to be posted.*
+**Typical measures put in place for data management and reliability.** *Slides: to be posted.*
 
 Readings:
 

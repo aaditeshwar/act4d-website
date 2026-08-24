@@ -1,6 +1,6 @@
 # Ethics in Applied CS
 
-**Update: Slides and lecture videos from the course conducting during August-November 2021 are available [here](#/lecture-videos).**
+**Update: Slides and lecture videos from the course conducting during August-November 2021 are available [here](#/lecture-videos). Lecture slides are listed [here](#/lecture-slides).**
 
 There is growing concern that although rapid information technology development has produced amazing outcomes, there have also been significant harmful effects for many reasons. Technology providers may be unable to control what the technology gets used for and by whom, they may not understand the limitations of their own technology, the regulatory response of the state might be too slow, and the technology may increase inequalities by servicing the rich and privileged much more than the poor and marginalized. Even technologies specifically designed to address certain social development objectives and reduce inequalities, may fail to do so.
 

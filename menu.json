@@ -115,6 +115,14 @@
               "content": "content/courses/ethics-in-applied-cs/lecture-videos.md",
               "status": "ready",
               "children": []
+            },
+            {
+              "id": "lecture-slides",
+              "title": "Lecture slides",
+              "content": "content/courses/ethics-in-applied-cs/lecture-slides.md",
+              "csv": "content/courses/ethics-in-applied-cs/lecture-slides.csv",
+              "status": "ready",
+              "children": []
             }
           ]
         },
