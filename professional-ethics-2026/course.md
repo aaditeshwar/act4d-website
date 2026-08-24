@@ -33,8 +33,6 @@
   - [ACM / USACM joint statement on AI](https://www.acm.org/binaries/content/assets/public-policy/final-joint-ai-statement-update.pdf)
   - [USTPC principles for generative AI](https://www.acm.org/binaries/content/assets/public-policy/ustpc-approved-generative-ai-principles)
 
-
-
 ### 29 August, 9am–12pm
 
 **Beyond regular ethics:** socio-technical power dynamics intermediated by technology. *[Slides here](aseth%20-%20socio-technical%20power%20dynamics.pdf)*
@@ -52,11 +50,9 @@
   - [HIPAA](https://www.hhs.gov/hipaa/index.html)
   - [Section 230](https://www.law.cornell.edu/uscode/text/47/230)
 
-
-
 ### 5 September, 9am–10:30am
 
-**Typical measures put in place for data privacy.** *[Slides here](https://www.cse.iitd.ac.in/~aseth/2b%20privacy.pdf).*
+**Typical measures put in place for data privacy.** *[Slides here](https://www.cse.iitd.ac.in/~aseth/col707/2b%20privacy.pdf).*
 
 **Typical measures put in place for data management and reliability.** *Slides: to be posted.*
 
