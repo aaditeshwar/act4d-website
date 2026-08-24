@@ -17,11 +17,10 @@ Led by [Aaditeshwar Seth](aseth.html), the group works in the following areas:
 
 ## Quick links
 
-- [Course: ICTs for Development and Sustainability, 2026](https://act4d.iitd.ac.in/ictd-2026/index.html)
-- [Course: Professional ethics and research writing, 2026](professional-ethics-2026/index.html)
-- Innovations: [CoRE Insights](http://act4d.iitd.ac.in/core-insights/), [Human–wildlife conflict mapping](https://act4d.iitd.ac.in/gdelt-wildlife/)
-- [CoRE stack](https://core-stack.org/), [LinkedIn page](https://www.linkedin.com/company/core-stack/)
-- [Gram Vaani](http://gramvaani.org/), [LinkedIn page](https://www.linkedin.com/company/gramvaani/)
+- Course: [ICTs for Development and Sustainability, 2026](https://act4d.iitd.ac.in/ictd-2026/index.html)
+- Course: [Professional ethics and research writing, 2026](professional-ethics-2026/index.html)
+- Reference implementations: [CoRE Insights](http://act4d.iitd.ac.in/core-insights/), [Human–wildlife conflict mapping](https://act4d.iitd.ac.in/gdelt-wildlife/)
+- CoRE stack: [GEE datasets directory](https://ee-corestackdev.projects.earthengine.app/view/core-stack-gee-app), [Know Your Landscape](https://www.explorer.core-stack.org/), [Technical manual v3](https://drive.google.com/file/d/1-OqhVrcCv3j4nRjgE2t_1sX0CDObmIK9/view?usp=drive_link)
 
 ---
 
