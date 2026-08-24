@@ -33,16 +33,18 @@
   - [ACM / USACM joint statement on AI](https://www.acm.org/binaries/content/assets/public-policy/final-joint-ai-statement-update.pdf)
   - [USTPC principles for generative AI](https://www.acm.org/binaries/content/assets/public-policy/ustpc-approved-generative-ai-principles)
 
+
+
 ### 29 August, 9am–12pm
 
-**Beyond regular ethics:** socio-technical power dynamics intermediated by technology. *Slides: to be posted.*
+**Beyond regular ethics:** socio-technical power dynamics intermediated by technology. *[Slides here](aseth%20-%20socio-technical%20power%20dynamics.pdf)*
 
 - Power dynamics intermediated by technology:
   - [Langdon Winner, *Do Artifacts Have Politics?](https://faculty.cc.gatech.edu/~beki/cs4001/Winner.pdf)*  *
   - [What's missing in the ACM Code of Ethics and Professional Conduct](https://interactions.acm.org/archive/view/may-june-2023/whats-missing-in-the-acm-code-of-ethics-and-professional-conduct)  *
   - [Questions for technologists](https://www.cse.iitd.ernet.in/~aseth/questions-for-technologists.pdf)
 
-**From examples → research → policy → compliance.** *Slides: to be posted.*
+**From examples → research → policy → compliance.** *[Slides here](aseth%20-%20privacy%20and%20data%20handling%20policies.pdf)*
 
 - Key policies:
   - [GDPR](https://gdpr.eu/)
@@ -50,9 +52,11 @@
   - [HIPAA](https://www.hhs.gov/hipaa/index.html)
   - [Section 230](https://www.law.cornell.edu/uscode/text/47/230)
 
+
+
 ### 5 September, 9am–10:30am
 
-**Typical measures put in place for data privacy.** *Slides: to be posted.*
+**Typical measures put in place for data privacy.** *[Slides here](https://www.cse.iitd.ac.in/~aseth/2b%20privacy.pdf).*
 
 **Typical measures put in place for data management and reliability.** *Slides: to be posted.*
 
