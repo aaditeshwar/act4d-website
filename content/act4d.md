@@ -104,7 +104,7 @@ From around 2018 the group turned to studying the political economy of developme
 
 <img class="figure-wide" src="images/gem.jpg" alt="Giant Economy Monitor district maps for 2001, 2011, and 2019">
 
-This line of thinking, together with understanding the ethics-of-technology fed into the 2022 book, *Technology and (Dis)Empowerment: A Call to Technologists*, and into shorter position pieces such as *Missing Publics in Digital Public Goods: The Need to Build Technologies for Communities* ([The India Forum](https://www.theindiaforum.in/forum/bringing-back-public-digital-public-goods), 2022), which argued that digital public infrastructure needs to be built as "technologies for communities" rather than imposed top-down — the same critique of individualized, Aadhaar-style digital ID that runs through the book's epilogue.
+This line of thinking, together with understanding the ethics-of-technology fed into the 2022 book, *Technology and (Dis)Empowerment: A Call to Technologists*, and into shorter position pieces such as *Missing Publics in Digital Public Goods: The Need to Build Technologies for Communities* ([The India Forum](https://www.theindiaforum.in/forum/bringing-back-public-digital-public-goods), 2022), which argued that digital public infrastructure needs to be built as "technologies for communities" rather than imposed top-down.
 
 **This helped us frame our final thesis, to build societal scale platforms that solve big problems, but in a community-based manner.** 
 
