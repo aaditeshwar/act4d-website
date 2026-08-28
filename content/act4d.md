@@ -35,7 +35,7 @@ Led by [Aaditeshwar Seth](aseth.html), the group works in the following areas:
 
 <div class="achievement">
 <img src="images/core-stack-colour-name.png" alt="CoRE Stack logo">
-<p><strong><a href="https://core-stack.org/">CoRE Stack</a></strong> (co-founded, 2022) — A digital public infrastructure for climate adaptation and natural resource management, being used by 20+ civil society organizations and environmental research institutions across 9 Indian states, combining geospatial datasets and algorithms landscape stewardship by rural communities.</p>
+<p><strong><a href="https://core-stack.org/">CoRE Stack</a></strong> (co-founded, 2022) — A digital public infrastructure for climate adaptation and natural resource management, being used by 20+ civil society organizations and environmental research institutions in 1500+ villages across 9 Indian states, combining geospatial datasets and algorithms landscape stewardship by rural communities.</p>
 </div>
 
 <div class="achievement achievement--cover">
@@ -114,4 +114,4 @@ From around 2019 we began using satellite imagery and remote sensing to track so
 
 <img class="figure-wide" src="images/lulc.png" alt="CoRE Stack land-use and land-cover maps, phenology, and cropping intensity">
 
-The CoRE Stack combines these geospatial layers with a nationally standardized **micro-watershed registry**, a field toolset (**Know Your Landscape**, **Commons Connect**) used by trained community "landscape stewards" to turn data into Detailed Project Reports for Gram Sabhas and schemes like MGNREGA, and a **neurosymbolic evidence engine** ("CoRE Insights") that diagnoses problems in landscapes. This had grown to 20+ partner CSOs across 9 states and roughly 90 tehsils using the CoRE stack, 430+ trained stewards, and integration work underway with government portals such as Yuktadhara. 
+The CoRE Stack combines these geospatial layers with a nationally standardized **micro-watershed registry**, a field toolset (**Know Your Landscape**, **Commons Connect**) used by trained community "landscape stewards" to turn data into Detailed Project Reports for Gram Sabhas and schemes like MGNREGA, and a **neurosymbolic evidence engine** ("CoRE Insights") that diagnoses problems in landscapes. This has grown to 20+ partner CSOs across 9 states and roughly 90 tehsils using the CoRE stack, 430+ trained stewards, and integration work underway with government portals such as Yuktadhara. 
