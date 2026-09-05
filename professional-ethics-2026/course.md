@@ -54,7 +54,7 @@
 
 **Typical measures put in place for data privacy.** *[Slides here](https://www.cse.iitd.ac.in/~aseth/col707/2b%20privacy.pdf).*
 
-**Typical measures put in place for data management and reliability.** *Slides: to be posted.*
+**Typical measures put in place for data management and reliability.** *[Slides here](aseth%20-%20data%20management.pdf)*
 
 - Readings:
   - [Jim Gray, *Why Do Computers Stop and What Can Be Done About It?](https://pages.cs.wisc.edu/~remzi/Classes/739/Fall2018/Papers/gray85-easy.pdf)*
