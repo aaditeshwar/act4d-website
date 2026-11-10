@@ -11,3 +11,4 @@
 RedirectMatch 404 /\.git
 RedirectMatch 404 /\.(svn|hg)
 RedirectMatch 404 /\.env
+RedirectMatch 404 \.sql$
