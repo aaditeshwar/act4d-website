@@ -195,7 +195,7 @@
 				</ul>
 			</li>
 			<li><a href="hypo-6.html">Hypothesis 6</a></li>
-			<li><a href="list-of-districts.php">List of Districts</a></li>
+			<li><a href="list-of-districts.html">List of Districts</a></li>
 			<!-- <li><a href="future-pred.html">Satellite-Based Prediction</a></li> -->
 			</li>
 		</ul>
@@ -203,7 +203,7 @@
 </nav> 
 
 <?php
-	include_once 'connect-to-server.php';
+	require_once dirname(__DIR__, 2) . DIRECTORY_SEPARATOR . 'load-districts.php';
 
 	$censuscode = isset($_GET['censuscode']) ? intval($_GET['censuscode']) : 0;
 	$row = gem_district_by_code($censuscode);

@@ -32,7 +32,7 @@ Shared chrome is `header.html` / `footer.html` (and copies under `Entities/`, `P
 
 **Socio-economic development**
 
-- District **census / development indicators**: `districts-info.csv` loaded in PHP by `load-districts.php` (`gem_district_by_code()`). `connect-to-server.php` only includes that loader (no database).
+- District **census / development indicators**: `districts-info.csv` loaded in PHP by `load-districts.php` (`gem_district_by_code()`), included from `main-district-page.php`.
 - District **maps**: GeoJSON JS globals (below). Hypothesis pages (`hypo-*.html`, `future-pred.html`) colour districts from those feature properties plus `hypothesis4.csv` / related CSVs.
 - `main-district-page.php` is the per-district report after a click on the national map.
 
