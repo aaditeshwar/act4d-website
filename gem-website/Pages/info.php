@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <?php
-$id = $_GET['page'];
-if (!empty($id)) {
-} else {
+$page = isset($_GET['page']) ? (string) $_GET['page'] : '';
+if ($page === '' || strpbrk($page, "/\\") !== false || strpos($page, '..') !== false) {
     header("Location:../Entities/INTERLOCKS.htm");
+    exit;
 }
+$page_html = htmlspecialchars($page, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$page_js = json_encode($page, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT);
 ?>
 <html lang="en">
 
@@ -78,7 +80,7 @@ $(function(){
 	<div class="main">
 		<h2 style="text-align: center;color: #05386b !important">
 
-			<?php echo $_GET['page']; ?>
+			<?php echo $page_html; ?>
 		</h2>
 		<div class="container-fluid">
 		<div class="row">
@@ -229,7 +231,7 @@ $(function(){
 								};
 
 
-								var json = $.getJSON("../json data/<?php echo $_GET['page']; ?>.json")
+								var json = $.getJSON("../json data/" + <?php echo $page_js; ?> + ".json")
 									.done(function (data) {
 										var data = {
 											nodes: data.nodes,

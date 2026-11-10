@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <?php
-$event = $_GET['event'];
-$np = $_GET['np'];
-$eventn = $_GET['eventn'];
-$npn = $_GET['npn'];
+$event = isset($_GET['event']) ? preg_replace('/[^0-9]/', '', (string) $_GET['event']) : '';
+$np = isset($_GET['np']) ? preg_replace('/[^a-z0-9]/', '', strtolower((string) $_GET['np'])) : '';
+$eventn = isset($_GET['eventn']) ? (string) $_GET['eventn'] : '';
+$npn = isset($_GET['npn']) ? (string) $_GET['npn'] : '';
+$event_js = json_encode($event, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT);
+$np_js = json_encode($np, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT);
+$eventn_html = htmlspecialchars($eventn, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$npn_html = htmlspecialchars($npn, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$event_href = rawurlencode($event);
+$eventn_href = rawurlencode($eventn);
 ?>
 <html lang="en">
 
@@ -78,7 +84,7 @@ $npn = $_GET['npn'];
     </div>
     <div data-spy="scroll" data-target="#list" data-offset="50" class="CC"><br>
         <h1 style="text-align:center;color: #05386b !important;">
-            Media Bias in coverage about <?php echo $eventn;?>
+            Media Bias in coverage about <?php echo $eventn_html;?>
 		</h1>
         <div class="container-fluid">
             <div class="row">
@@ -90,9 +96,9 @@ $npn = $_GET['npn'];
             </div>
         </div>
         <h1 style="text-align:center;color: #05386b !important;">
-            <?php echo $_GET['eventn']; ?>
+            <?php echo $eventn_html; ?>
             <span style="color: #05386b !important;font-size:50%;">
-                <?php echo $_GET['npn']; ?>
+                <?php echo $npn_html; ?>
             </span>
         </h1>
         <hr>
@@ -110,25 +116,25 @@ $npn = $_GET['npn'];
                                 </span>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=timesofindia&npn=Times Of India">Times of India</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=timesofindia&npn=Times Of India">Times of India</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=hindustantimes&npn=Hindustan Times">Hindustan Times</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=hindustantimes&npn=Hindustan Times">Hindustan Times</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=thehindu&npn=Hindu">Hindu</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=thehindu&npn=Hindu">Hindu</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=indianexpress&npn=Indian Express">Indian Express</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=indianexpress&npn=Indian Express">Indian Express</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=telegraph&npn=Telegraph">Telegraph</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=telegraph&npn=Telegraph">Telegraph</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=deccanherald&npn=Deccan Herald">Deccan Herald</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=deccanherald&npn=Deccan Herald">Deccan Herald</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=newindianexpress&npn=New Indian Express">New Indian Express</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=newindianexpress&npn=New Indian Express">New Indian Express</a>'; ?>
                             </li>
 
                         </ul>
@@ -282,7 +288,7 @@ $npn = $_GET['npn'];
 
                         // Set up data source
                         chart.dataSource.url =
-                            "../csv data/Mass Media/<?php echo $_GET['event']; ?>/<?php echo $_GET['np']; ?>/AspectCoverage/Social/GraphData.csv";
+                            "../csv data/Mass Media/" + <?php echo $event_js; ?> + "/" + <?php echo $np_js; ?> + "/AspectCoverage/Social/GraphData.csv";
                         chart.dataSource.parser = new am4core.CSVParser();
                         chart.dataSource.parser.options.useColumnNames = true;
 
@@ -346,25 +352,25 @@ $npn = $_GET['npn'];
                                 </span>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=timesofindia&npn=Times Of India">Times of India</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=timesofindia&npn=Times Of India">Times of India</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=hindustantimes&npn=Hindustan Times">Hindustan Times</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=hindustantimes&npn=Hindustan Times">Hindustan Times</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=thehindu&npn=Hindu">Hindu</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=thehindu&npn=Hindu">Hindu</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=indianexpress&npn=Indian Express">Indian Express</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=indianexpress&npn=Indian Express">Indian Express</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=telegraph&npn=Telegraph">Telegraph</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=telegraph&npn=Telegraph">Telegraph</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=deccanherald&npn=Deccan Herald">Deccan Herald</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=deccanherald&npn=Deccan Herald">Deccan Herald</a>'; ?>
                             </li>
                             <li class="list-group-item">
-                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event . '&eventn=' . $eventn . '&np=newindianexpress&npn=New Indian Express">New Indian Express</a>'; ?>
+                                <?php echo '<a href="../Pages/mediainfo.php?event=' . $event_href . '&eventn=' . $eventn_href . '&np=newindianexpress&npn=New Indian Express">New Indian Express</a>'; ?>
                             </li>
 
                         </ul>
@@ -535,7 +541,7 @@ $npn = $_GET['npn'];
 
                         // Set up data source
                         chart.dataSource.url =
-                            "../csv data/Mass Media/<?php echo $_GET['event']; ?>/<?php echo $_GET['np']; ?>/AspectSentiment/Social/GraphData.csv";
+                            "../csv data/Mass Media/" + <?php echo $event_js; ?> + "/" + <?php echo $np_js; ?> + "/AspectSentiment/Social/GraphData.csv";
                         chart.dataSource.parser = new am4core.CSVParser();
                         chart.dataSource.parser.options.useColumnNames = true;
 

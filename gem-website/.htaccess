@@ -1,0 +1,10 @@
+# Deny VCS metadata if this directory is a document root.
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule (^|/)\.git - [F,L]
+	RewriteRule (^|/)\.(svn|hg) - [F,L]
+	RewriteRule (^|/)\.env - [F,L]
+</IfModule>
+RedirectMatch 404 /\.git
+RedirectMatch 404 /\.(svn|hg)
+RedirectMatch 404 /\.env

@@ -254,7 +254,7 @@
 </div>
 
 <script>
-	const mydist_news = dist_news[<?php echo $_GET['censuscode']?>];
+	const mydist_news = dist_news[<?php echo json_encode($censuscode); ?>];
 	console.log(mydist_news);
 	if(!mydist_news || mydist_news.length <= 0) {
 		document.getElementById("mydisp").style.display = "none";
@@ -289,7 +289,7 @@
 						fillOpacity: 0.7
 					};
 				}
-	var idx = '<?php echo $_GET['censuscode']; ?>' ;
+	var idx = <?php echo json_encode((string) $censuscode); ?>;
 	// console.log(india_districts["features"][idx]);
 	var curr_dist = india_districts["features"][idx];
 	// document.getElementById('test1').innerHTML = curr_dist['properties']['DISTRICT'];

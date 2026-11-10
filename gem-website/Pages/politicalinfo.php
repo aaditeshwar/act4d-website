@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <?php
-$event = $_GET['event'];
-$eventn = $_GET['eventn'];
-if (!empty($event)) {
-} else {
+$event = isset($_GET['event']) ? (string) $_GET['event'] : '';
+$eventn = isset($_GET['eventn']) ? (string) $_GET['eventn'] : '';
+if ($event === '' || !preg_match('/^[A-Za-z0-9._-]+$/', $event)) {
     header("Location:../Entities/POLITICALECONOMY.htm");
-}?>
+    exit;
+}
+$event_js = json_encode($event, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT);
+$eventn_html = htmlspecialchars($eventn, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+?>
 <html lang="en">
 
 <head>
@@ -77,7 +80,7 @@ if (!empty($event)) {
     </div>
     <div data-spy="scroll" data-target="#list" data-offset="50" class="CC"><br>
         <h1 style="text-align:center;color: #05386b !important;">
-            Political Economy behind <?php echo $eventn;?>
+            Political Economy behind <?php echo $eventn_html;?>
         </h1>
         <div class="container-fluid">
             <div class="row">
@@ -92,7 +95,7 @@ if (!empty($event)) {
         <div class="container-fluid" id="AspectCoverage">
             <div class="row">
                 <div class="col-sm-12 text-left">
-                <h2 style="text-align: center;">Aspect Coverage behind <?php echo $eventn;?></h2>
+                <h2 style="text-align: center;">Aspect Coverage behind <?php echo $eventn_html;?></h2>
                 <p
                         style="text-align:left ;margin-inline-end: 4%;margin-inline-start: 4%;padding: 2.5px 2.5px 2.5px 2.5px; margin-block-start:2%;">
                         <?php include('../text data/Political/' . $event . '/text3.txt');?> </p>
@@ -114,7 +117,7 @@ if (!empty($event)) {
 
                         // Set up data source
                         chart.dataSource.url =
-                            "../csv data/Political Economy/<?php echo $_GET['event']; ?>/np_coverage.csv";
+                            "../csv data/Political Economy/" + <?php echo $event_js; ?> + "/np_coverage.csv";
                         chart.dataSource.parser = new am4core.CSVParser();
                         chart.dataSource.parser.options.useColumnNames = true;
 
@@ -219,7 +222,7 @@ if (!empty($event)) {
 
                         // Set up data source
                         chart.dataSource.url =
-                            "../csv data/Political Economy/<?php echo $_GET['event']; ?>/EntityCoverage/GraphData.csv";
+                            "../csv data/Political Economy/" + <?php echo $event_js; ?> + "/EntityCoverage/GraphData.csv";
                         chart.dataSource.parser = new am4core.CSVParser();
                         chart.dataSource.parser.options.useColumnNames = true;
 
@@ -333,7 +336,7 @@ if (!empty($event)) {
 
                     // Set up data source
                     chart.dataSource.url =
-                        "../csv data/Political Economy/<?php echo $_GET['event']; ?>/EntitySentiment/GraphData.csv";
+                        "../csv data/Political Economy/" + <?php echo $event_js; ?> + "/EntitySentiment/GraphData.csv";
                     chart.dataSource.parser = new am4core.CSVParser();
                     chart.dataSource.parser.options.useColumnNames = true;
 

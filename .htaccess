@@ -1,0 +1,13 @@
+# Deny VCS metadata and env files. Apache 2.2/2.4.
+# If this file is ignored (AllowOverride None), add the same deny in the vhost:
+#   RedirectMatch 404 /\.git
+# Nginx: location ~ /\.git { deny all; return 404; }
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule (^|/)\.git - [F,L]
+	RewriteRule (^|/)\.(svn|hg) - [F,L]
+	RewriteRule (^|/)\.env - [F,L]
+</IfModule>
+RedirectMatch 404 /\.git
+RedirectMatch 404 /\.(svn|hg)
+RedirectMatch 404 /\.env
