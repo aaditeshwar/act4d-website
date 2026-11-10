@@ -1,7 +1,15 @@
+<?php
+require_once dirname(__DIR__, 2) . DIRECTORY_SEPARATOR . 'load-districts.php';
+$censuscode = isset($_GET['censuscode']) ? intval($_GET['censuscode']) : 0;
+$row = gem_district_by_code($censuscode);
+$district_html = htmlspecialchars(ucwords((string) ($row['District_name'] ?? '')), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$state_html = htmlspecialchars(ucwords(strtolower((string) ($row['State_name'] ?? ''))), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$pop_html = htmlspecialchars((string) ($row['TOT_P_2011'] ?? ''), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Salient Information on Anantapur, Andhra Pradesh</title>
+	<title>Salient Information on <?php echo $district_html; ?>, <?php echo $state_html; ?></title>
 </head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -202,14 +210,7 @@
 	</div>
 </nav> 
 
-<?php
-	require_once dirname(__DIR__, 2) . DIRECTORY_SEPARATOR . 'load-districts.php';
-
-	$censuscode = isset($_GET['censuscode']) ? intval($_GET['censuscode']) : 0;
-	$row = gem_district_by_code($censuscode);
-?>
-
-<h1 style="text-align: center;color: #05386b !important;">Salient Information on District <?php echo ucwords($row['District_name'] ?? ''); ?>, <?php echo ucwords(strtolower($row['State_name'] ?? '')); ?> </h1>
+<h1 style="text-align: center;color: #05386b !important;">Salient Information on District <?php echo $district_html; ?>, <?php echo $state_html; ?> </h1>
 
 <div class="container" style="margin-top: 40px;">
 	<div class="row">
@@ -224,7 +225,7 @@
 				<td style="width: 300px; border-style: solid; border-width: 1px; 
 				background-color: #33cc33; color: white;padding-left: 20px"> 
 				<div id="info_dist">			
-					<p><strong>Population: </strong> <?php echo $row['TOT_P_2011'] ?? '';?></p>
+					<p><strong>Population: </strong> <?php echo $pop_html; ?></p>
 					<p><strong>Aggregate Development Index: </strong> </p>
 					<p id="adi_2001"><b>ADI(2001): </b> </p>
 					<p id="adi_2011"><b>ADI(2011): </b> </p>
@@ -254,6 +255,18 @@
 </div>
 
 <script>
+	function gemEsc(s) {
+		return String(s == null ? '' : s)
+			.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+			.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+	}
+	function gemHttpUrl(u) {
+		try {
+			var p = new URL(String(u), location.href);
+			if (p.protocol === 'http:' || p.protocol === 'https:') return p.href;
+		} catch (e) {}
+		return '#';
+	}
 	const mydist_news = dist_news[<?php echo json_encode($censuscode); ?>];
 	console.log(mydist_news);
 	if(!mydist_news || mydist_news.length <= 0) {
@@ -264,15 +277,15 @@
 			var curr_art = mydist_news[i];
 			var tags = [curr_art.publishedDate,curr_art.sourceName,curr_art.art_subclass];
 			var color = "green";
-			if(curr_art.art_subclass.includes("slow")) color = "red";
-			if(curr_art.art_subclass.includes("avg")) color = "yellow";
+			if(curr_art.art_subclass && curr_art.art_subclass.includes("slow")) color = "red";
+			if(curr_art.art_subclass && curr_art.art_subclass.includes("avg")) color = "yellow";
 			var tool_string = "Relevance Score: " + (curr_art.met_score*100);
 			string_res += "<div class=\"row\">";
 			string_res += "<p>";
 			string_res += "<span class=\"dot\" style=\"background-color: "+ color + "; height: 10px;width: 10px;border-radius: 50%; display: inline-block;margin-top: 10px;\"></span>&nbsp;";
-			string_res += "<a href=\"" + curr_art.articleUrl + "\" title=\"" + tool_string + "\">" + curr_art.articleTitle + "</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+			string_res += "<a href=\"" + gemEsc(gemHttpUrl(curr_art.articleUrl)) + "\" title=\"" + gemEsc(tool_string) + "\">" + gemEsc(curr_art.articleTitle) + "</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 			for(let j=0;j<tags.length;j++) {
-				string_res += "<span class=\"badge badge-pill badge-primary\">"+tags[j]+"</span>&nbsp;";
+				string_res += "<span class=\"badge badge-pill badge-primary\">"+gemEsc(tags[j])+"</span>&nbsp;";
 			}
 			string_res += "</p></div>";
 		}
@@ -298,15 +311,15 @@
 	var dist_layer = L.geoJson(curr_dist, {style: my_style}).addTo(dist_map);
 	dist_map.fitBounds(dist_layer.getBounds());
 	dist_map.setZoom(8);
-	document.getElementById('adi_2001').innerHTML += curr_dist["properties"]["adi_2001"];
-	document.getElementById('adi_2011').innerHTML += curr_dist["properties"]["adi_2011"];
-	document.getElementById('adi_2019').innerHTML += curr_dist["properties"]["adi_2019"];
+	document.getElementById('adi_2001').textContent += curr_dist["properties"]["adi_2001"];
+	document.getElementById('adi_2011').textContent += curr_dist["properties"]["adi_2011"];
+	document.getElementById('adi_2019').textContent += curr_dist["properties"]["adi_2019"];
 
 	var emp = curr_dist["properties"]["emp_2011"];
 	if(emp == 1.0) emp = 'Others';
 	else if(emp == 2.0) emp = 'Agri';
 	else emp = 'Non-Agri';
-	document.getElementById('emp').innerHTML += emp;
+	document.getElementById('emp').textContent += emp;
 
 	if(curr_dist["properties"]["Available"] == 0) {
 		document.getElementById('no-info').style.display = "inline-block";

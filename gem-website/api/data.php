@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 
 $event = isset($_GET['event']) ? preg_replace('/[^0-9]/', '', $_GET['event']) : '';
 $np = isset($_GET['np']) ? preg_replace('/[^a-z0-9]/', '', strtolower($_GET['np'])) : '';
-$coverage = isset($_GET['coverage']) ? $_GET['coverage'] : 'aspect';
+$coverage = (isset($_GET['coverage']) && $_GET['coverage'] === 'sentiment') ? 'sentiment' : 'aspect';
 
 $kind = ($coverage === 'sentiment') ? 'AspectSentiment' : 'AspectCoverage';
 $path = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'csv data' . DIRECTORY_SEPARATOR

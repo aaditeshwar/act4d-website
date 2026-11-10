@@ -8,6 +8,13 @@ if ($event === '' || !preg_match('/^[A-Za-z0-9._-]+$/', $event)) {
 }
 $event_js = json_encode($event, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT);
 $eventn_html = htmlspecialchars($eventn, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+function gem_note($rel) {
+    $path = dirname(__DIR__) . DIRECTORY_SEPARATOR . str_replace('/', DIRECTORY_SEPARATOR, $rel);
+    if (!is_file($path)) {
+        return '';
+    }
+    return htmlspecialchars(file_get_contents($path), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+}
 ?>
 <html lang="en">
 
@@ -87,7 +94,7 @@ $eventn_html = htmlspecialchars($eventn, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
                 <div class="col-sm-12">
                     <p
                         style="margin-inline-end: 4%;margin-inline-start: 4%;padding: 2.5px 2.5px 2.5px 2.5px; margin-block-start:2%;">
-                        <?php include('../text data/Political/' . $event . '/text.txt');?></p>
+                        <?php echo gem_note('text data/Political/' . $event . '/text.txt'); ?></p>
                 </div>
             </div>
         </div>
@@ -98,12 +105,12 @@ $eventn_html = htmlspecialchars($eventn, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
                 <h2 style="text-align: center;">Aspect Coverage behind <?php echo $eventn_html;?></h2>
                 <p
                         style="text-align:left ;margin-inline-end: 4%;margin-inline-start: 4%;padding: 2.5px 2.5px 2.5px 2.5px; margin-block-start:2%;">
-                        <?php include('../text data/Political/' . $event . '/text3.txt');?> </p>
+                        <?php echo gem_note('text data/Political/' . $event . '/text3.txt'); ?> </p>
                     
                     <div id="chartdivone" style="height: 480px;"></div>
                     <p
                         style="text-align:left ;margin-inline-end: 4%;margin-inline-start: 4%;padding: 2.5px 2.5px 2.5px 2.5px; margin-block-start:2%;">
-                        <?php include('../text data/Political/' . $event . '/text4.txt');?> </p>
+                        <?php echo gem_note('text data/Political/' . $event . '/text4.txt'); ?> </p>
                     <script>
                         // Themes begin
                         am4core.useTheme(am4themes_animated);
@@ -170,7 +177,7 @@ $eventn_html = htmlspecialchars($eventn, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
                     <div id="chartdiv" style="height: 480px;"></div>
                     <p
                         style="text-align:left ;margin-inline-end: 4%;margin-inline-start: 4%;padding: 2.5px 2.5px 2.5px 2.5px; margin-block-start:2%;">
-                        <?php include('../text data/Political/' . $event . '/text1.txt');?> </p>
+                        <?php echo gem_note('text data/Political/' . $event . '/text1.txt'); ?> </p>
                     <!-- <button id="myBtn" class="btn btn-success myBtn">Read more</button>
     -->
                     <div id="myModal" class="modal">
@@ -286,7 +293,7 @@ $eventn_html = htmlspecialchars($eventn, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
                         style="width: 98%;margin-inline-start: 1%;margin-inline-end: 1%; height: 480px;"></div>
                     <p
                         style="text-align:left ;margin-inline-end: 4%;margin-inline-start: 4%;padding: 2.5px 2.5px 2.5px 2.5px; margin-block-start:2%;">
-                        <?php include('../text data/Political/' . $event . '/text2.txt');?> </p>
+                        <?php echo gem_note('text data/Political/' . $event . '/text2.txt'); ?> </p>
                     <!--<button id="myBtn2" class="btn btn-success myBtn">Read more</button>
     -->
                 </div>

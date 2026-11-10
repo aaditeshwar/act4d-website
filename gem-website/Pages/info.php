@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php
 $page = isset($_GET['page']) ? (string) $_GET['page'] : '';
-if ($page === '' || strpbrk($page, "/\\") !== false || strpos($page, '..') !== false) {
+$json_path = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'json data' . DIRECTORY_SEPARATOR . $page . '.json';
+if ($page === '' || strpbrk($page, "/\\") !== false || strpos($page, '..') !== false || !is_file($json_path)) {
     header("Location:../Entities/INTERLOCKS.htm");
     exit;
 }

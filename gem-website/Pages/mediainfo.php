@@ -10,6 +10,13 @@ $eventn_html = htmlspecialchars($eventn, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 $npn_html = htmlspecialchars($npn, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 $event_href = rawurlencode($event);
 $eventn_href = rawurlencode($eventn);
+function gem_note($rel) {
+    $path = dirname(__DIR__) . DIRECTORY_SEPARATOR . str_replace('/', DIRECTORY_SEPARATOR, $rel);
+    if (!is_file($path)) {
+        return '';
+    }
+    return htmlspecialchars(file_get_contents($path), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+}
 ?>
 <html lang="en">
 
@@ -91,7 +98,7 @@ $eventn_href = rawurlencode($eventn);
                 <div class="col-sm-12">
                 <p
                                     style="text-align:left ;margin-inline-end: 4%;margin-inline-start: 4%;padding: 2.5px 2.5px 2.5px 2.5px; margin-block-start:2%;">
-                                    <?php include('../text data/Mass Media/' . $event . '/text.txt');?> </p>
+                                    <?php echo gem_note('text data/Mass Media/' . $event . '/text.txt'); ?> </p>
                 </div>
             </div>
         </div>
@@ -333,7 +340,7 @@ $eventn_href = rawurlencode($eventn);
                     <h4 style="text-align:center;">Aspect coverage by different newspapers</h4>
                     <p
                                     style="text-align:left ;margin-inline-end: 4%;margin-inline-start: 4%;padding: 2.5px 2.5px 2.5px 2.5px; margin-block-start:2%;height:500px;overflow:none;">
-                                    <?php include('../text data/Mass Media/' . $event . '/text1.txt');?> </p>
+                                    <?php echo gem_note('text data/Mass Media/' . $event . '/text1.txt'); ?> </p>
                 </div>
             </div>
         </div>
@@ -596,7 +603,7 @@ $eventn_href = rawurlencode($eventn);
                     <h4 style="text-align:center;">Sentiment of coverage by different newspapers</h4>
                     <p
                                     style="text-align:left ;margin-inline-end: 4%;margin-inline-start: 4%;padding: 2.5px 2.5px 2.5px 2.5px; margin-block-start:2%;height:650px;overflow:none;">
-                                    <?php include('../text data/Mass Media/' . $event . '/text2.txt');?> </p>
+                                    <?php echo gem_note('text data/Mass Media/' . $event . '/text2.txt'); ?> </p>
                 </div>
             </div>
         </div>
