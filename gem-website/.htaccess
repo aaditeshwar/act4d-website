@@ -1,11 +1,2 @@
-# Deny VCS metadata if this directory is a document root.
-<IfModule mod_rewrite.c>
-	RewriteEngine On
-	RewriteRule (^|/)\.git - [F,L]
-	RewriteRule (^|/)\.(svn|hg) - [F,L]
-	RewriteRule (^|/)\.env - [F,L]
-</IfModule>
-RedirectMatch 404 /\.git
-RedirectMatch 404 /\.(svn|hg)
-RedirectMatch 404 /\.env
-RedirectMatch 404 \.sql$
+# Keep empty of Rewrite/Redirect so this tree can live under CSE ~user URLs.
+# See the site-root .htaccess comment for the act4d.iitd.ac.in vhost deny rules.

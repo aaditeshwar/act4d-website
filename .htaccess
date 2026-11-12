@@ -1,14 +1,9 @@
-# Deny VCS metadata and env files. Apache 2.2/2.4.
-# If this file is ignored (AllowOverride None), add the same deny in the vhost:
+# Do not put RewriteRule or RedirectMatch here.
+# www.cse.iitd.ac.in/~user/ dirs treat those as fatal and return 500 for every URL.
+#
+# Block .git on act4d.iitd.ac.in in the virtual host instead:
 #   RedirectMatch 404 /\.git
-# Nginx: location ~ /\.git { deny all; return 404; }
-<IfModule mod_rewrite.c>
-	RewriteEngine On
-	RewriteRule (^|/)\.git - [F,L]
-	RewriteRule (^|/)\.(svn|hg) - [F,L]
-	RewriteRule (^|/)\.env - [F,L]
-</IfModule>
-RedirectMatch 404 /\.git
-RedirectMatch 404 /\.(svn|hg)
-RedirectMatch 404 /\.env
-RedirectMatch 404 \.sql$
+#   RedirectMatch 404 /\.env
+#   RedirectMatch 404 \.sql$
+# Nginx:
+#   location ~ /\.git { deny all; return 404; }
